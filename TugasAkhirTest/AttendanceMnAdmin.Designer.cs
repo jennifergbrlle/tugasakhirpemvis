@@ -35,7 +35,7 @@
             // absensiadmin_btn
             // 
             this.absensiadmin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.absensiadmin_btn.Location = new System.Drawing.Point(173, 13);
+            this.absensiadmin_btn.Location = new System.Drawing.Point(189, 17);
             this.absensiadmin_btn.Name = "absensiadmin_btn";
             this.absensiadmin_btn.Size = new System.Drawing.Size(75, 33);
             this.absensiadmin_btn.TabIndex = 0;
@@ -45,7 +45,7 @@
             // laporanabsensiadmin_btn
             // 
             this.laporanabsensiadmin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.laporanabsensiadmin_btn.Location = new System.Drawing.Point(273, 13);
+            this.laporanabsensiadmin_btn.Location = new System.Drawing.Point(289, 17);
             this.laporanabsensiadmin_btn.Name = "laporanabsensiadmin_btn";
             this.laporanabsensiadmin_btn.Size = new System.Drawing.Size(146, 33);
             this.laporanabsensiadmin_btn.TabIndex = 1;
@@ -61,7 +61,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "AttendanceMnAdmin";
-            this.Size = new System.Drawing.Size(582, 445);
+            this.Size = new System.Drawing.Size(615, 465);
             this.ResumeLayout(false);
 
         }
