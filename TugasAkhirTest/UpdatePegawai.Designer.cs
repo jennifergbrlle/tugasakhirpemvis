@@ -55,7 +55,6 @@
             this.pendidikanupdate_txt = new System.Windows.Forms.TextBox();
             this.tempatlahirupdate_txt = new System.Windows.Forms.TextBox();
             this.namablkgupdate_txt = new System.Windows.Forms.TextBox();
-            this.namadepanupdate_txt = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -78,6 +77,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.namadepanupdate_txt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // batalupdate_btn
@@ -108,7 +108,7 @@
             this.tglmasukupdate_txt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.tglmasukupdate_txt.Location = new System.Drawing.Point(428, 96);
             this.tglmasukupdate_txt.Name = "tglmasukupdate_txt";
-            this.tglmasukupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.tglmasukupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.tglmasukupdate_txt.TabIndex = 147;
             // 
             // tgllahirupdate_txt
@@ -117,7 +117,7 @@
             this.tgllahirupdate_txt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.tgllahirupdate_txt.Location = new System.Drawing.Point(119, 121);
             this.tgllahirupdate_txt.Name = "tgllahirupdate_txt";
-            this.tgllahirupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.tgllahirupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.tgllahirupdate_txt.TabIndex = 146;
             // 
             // jabatanupdate_txt
@@ -126,7 +126,7 @@
             this.jabatanupdate_txt.FormattingEnabled = true;
             this.jabatanupdate_txt.Location = new System.Drawing.Point(428, 68);
             this.jabatanupdate_txt.Name = "jabatanupdate_txt";
-            this.jabatanupdate_txt.Size = new System.Drawing.Size(140, 24);
+            this.jabatanupdate_txt.Size = new System.Drawing.Size(166, 24);
             this.jabatanupdate_txt.TabIndex = 145;
             // 
             // divisiupdate_txt
@@ -135,7 +135,7 @@
             this.divisiupdate_txt.FormattingEnabled = true;
             this.divisiupdate_txt.Location = new System.Drawing.Point(428, 40);
             this.divisiupdate_txt.Name = "divisiupdate_txt";
-            this.divisiupdate_txt.Size = new System.Drawing.Size(140, 24);
+            this.divisiupdate_txt.Size = new System.Drawing.Size(166, 24);
             this.divisiupdate_txt.TabIndex = 144;
             // 
             // statusalamatupdate_txt
@@ -144,7 +144,7 @@
             this.statusalamatupdate_txt.FormattingEnabled = true;
             this.statusalamatupdate_txt.Location = new System.Drawing.Point(119, 281);
             this.statusalamatupdate_txt.Name = "statusalamatupdate_txt";
-            this.statusalamatupdate_txt.Size = new System.Drawing.Size(140, 24);
+            this.statusalamatupdate_txt.Size = new System.Drawing.Size(166, 24);
             this.statusalamatupdate_txt.TabIndex = 143;
             // 
             // agamaupdate_txt
@@ -153,7 +153,7 @@
             this.agamaupdate_txt.FormattingEnabled = true;
             this.agamaupdate_txt.Location = new System.Drawing.Point(119, 147);
             this.agamaupdate_txt.Name = "agamaupdate_txt";
-            this.agamaupdate_txt.Size = new System.Drawing.Size(140, 24);
+            this.agamaupdate_txt.Size = new System.Drawing.Size(166, 24);
             this.agamaupdate_txt.TabIndex = 142;
             // 
             // golABupdate_btn
@@ -233,7 +233,7 @@
             this.cabangbankupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cabangbankupdate_txt.Location = new System.Drawing.Point(428, 284);
             this.cabangbankupdate_txt.Name = "cabangbankupdate_txt";
-            this.cabangbankupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.cabangbankupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.cabangbankupdate_txt.TabIndex = 135;
             // 
             // namabankupdate_txt
@@ -241,7 +241,7 @@
             this.namabankupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namabankupdate_txt.Location = new System.Drawing.Point(428, 257);
             this.namabankupdate_txt.Name = "namabankupdate_txt";
-            this.namabankupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.namabankupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.namabankupdate_txt.TabIndex = 134;
             // 
             // norekupdate_txt
@@ -249,7 +249,7 @@
             this.norekupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.norekupdate_txt.Location = new System.Drawing.Point(428, 203);
             this.norekupdate_txt.Name = "norekupdate_txt";
-            this.norekupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.norekupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.norekupdate_txt.TabIndex = 133;
             // 
             // npwpupdate_txt
@@ -257,7 +257,7 @@
             this.npwpupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.npwpupdate_txt.Location = new System.Drawing.Point(428, 176);
             this.npwpupdate_txt.Name = "npwpupdate_txt";
-            this.npwpupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.npwpupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.npwpupdate_txt.TabIndex = 132;
             // 
             // namarekupdate_txt
@@ -265,7 +265,7 @@
             this.namarekupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namarekupdate_txt.Location = new System.Drawing.Point(428, 230);
             this.namarekupdate_txt.Name = "namarekupdate_txt";
-            this.namarekupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.namarekupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.namarekupdate_txt.TabIndex = 131;
             // 
             // nosimupdate_txt
@@ -273,7 +273,7 @@
             this.nosimupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nosimupdate_txt.Location = new System.Drawing.Point(428, 149);
             this.nosimupdate_txt.Name = "nosimupdate_txt";
-            this.nosimupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.nosimupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.nosimupdate_txt.TabIndex = 130;
             // 
             // noktpupdate_txt
@@ -281,7 +281,7 @@
             this.noktpupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noktpupdate_txt.Location = new System.Drawing.Point(428, 122);
             this.noktpupdate_txt.Name = "noktpupdate_txt";
-            this.noktpupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.noktpupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.noktpupdate_txt.TabIndex = 129;
             // 
             // nipupdate_txt
@@ -289,7 +289,7 @@
             this.nipupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nipupdate_txt.Location = new System.Drawing.Point(428, 14);
             this.nipupdate_txt.Name = "nipupdate_txt";
-            this.nipupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.nipupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.nipupdate_txt.TabIndex = 128;
             // 
             // notelpupdate_txt
@@ -297,7 +297,7 @@
             this.notelpupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notelpupdate_txt.Location = new System.Drawing.Point(119, 311);
             this.notelpupdate_txt.Name = "notelpupdate_txt";
-            this.notelpupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.notelpupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.notelpupdate_txt.TabIndex = 127;
             // 
             // alamatupdate_txt
@@ -306,7 +306,7 @@
             this.alamatupdate_txt.Location = new System.Drawing.Point(119, 203);
             this.alamatupdate_txt.Multiline = true;
             this.alamatupdate_txt.Name = "alamatupdate_txt";
-            this.alamatupdate_txt.Size = new System.Drawing.Size(140, 72);
+            this.alamatupdate_txt.Size = new System.Drawing.Size(166, 72);
             this.alamatupdate_txt.TabIndex = 126;
             // 
             // pendidikanupdate_txt
@@ -314,7 +314,7 @@
             this.pendidikanupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pendidikanupdate_txt.Location = new System.Drawing.Point(119, 176);
             this.pendidikanupdate_txt.Name = "pendidikanupdate_txt";
-            this.pendidikanupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.pendidikanupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.pendidikanupdate_txt.TabIndex = 125;
             // 
             // tempatlahirupdate_txt
@@ -322,7 +322,7 @@
             this.tempatlahirupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempatlahirupdate_txt.Location = new System.Drawing.Point(119, 95);
             this.tempatlahirupdate_txt.Name = "tempatlahirupdate_txt";
-            this.tempatlahirupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.tempatlahirupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.tempatlahirupdate_txt.TabIndex = 124;
             // 
             // namablkgupdate_txt
@@ -330,16 +330,8 @@
             this.namablkgupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namablkgupdate_txt.Location = new System.Drawing.Point(119, 41);
             this.namablkgupdate_txt.Name = "namablkgupdate_txt";
-            this.namablkgupdate_txt.Size = new System.Drawing.Size(140, 21);
+            this.namablkgupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.namablkgupdate_txt.TabIndex = 123;
-            // 
-            // namadepanupdate_txt
-            // 
-            this.namadepanupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namadepanupdate_txt.Location = new System.Drawing.Point(119, 14);
-            this.namadepanupdate_txt.Name = "namadepanupdate_txt";
-            this.namadepanupdate_txt.Size = new System.Drawing.Size(140, 21);
-            this.namadepanupdate_txt.TabIndex = 122;
             // 
             // label22
             // 
@@ -561,6 +553,14 @@
             this.label1.TabIndex = 100;
             this.label1.Text = "Nama Depan";
             // 
+            // namadepanupdate_txt
+            // 
+            this.namadepanupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namadepanupdate_txt.Location = new System.Drawing.Point(119, 14);
+            this.namadepanupdate_txt.Name = "namadepanupdate_txt";
+            this.namadepanupdate_txt.Size = new System.Drawing.Size(166, 21);
+            this.namadepanupdate_txt.TabIndex = 122;
+            // 
             // UpdatePegawai
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -617,7 +617,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "UpdatePegawai";
-            this.Size = new System.Drawing.Size(582, 379);
+            this.Size = new System.Drawing.Size(615, 380);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -652,7 +652,6 @@
         private System.Windows.Forms.TextBox pendidikanupdate_txt;
         private System.Windows.Forms.TextBox tempatlahirupdate_txt;
         private System.Windows.Forms.TextBox namablkgupdate_txt;
-        private System.Windows.Forms.TextBox namadepanupdate_txt;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
@@ -675,5 +674,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox namadepanupdate_txt;
     }
 }

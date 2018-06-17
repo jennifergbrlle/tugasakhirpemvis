@@ -38,10 +38,10 @@
             this.homeadmin_btn = new System.Windows.Forms.Button();
             this.exit_button = new System.Windows.Forms.Button();
             this.sidepanel = new System.Windows.Forms.Panel();
-            this.homeAdmin1 = new TugasAkhirTest.HomeAdmin();
-            this.about1 = new TugasAkhirTest.About();
-            this.attendanceMnAdmin1 = new TugasAkhirTest.AttendanceMnAdmin();
             this.employeeMnAdmin1 = new TugasAkhirTest.EmployeeMnAdmin();
+            this.attendanceMnAdmin1 = new TugasAkhirTest.AttendanceMnAdmin();
+            this.about1 = new TugasAkhirTest.About();
+            this.homeAdmin1 = new TugasAkhirTest.HomeAdmin();
             this.panel1.SuspendLayout();
             this.sidemenu.SuspendLayout();
             this.SuspendLayout();
@@ -157,6 +157,7 @@
             this.exit_button.Size = new System.Drawing.Size(30, 30);
             this.exit_button.TabIndex = 2;
             this.exit_button.UseVisualStyleBackColor = true;
+            this.exit_button.Click += new System.EventHandler(this.exit_button_Click_1);
             // 
             // sidepanel
             // 
@@ -166,25 +167,15 @@
             this.sidepanel.Size = new System.Drawing.Size(13, 37);
             this.sidepanel.TabIndex = 6;
             // 
-            // homeAdmin1
+            // employeeMnAdmin1
             // 
-            this.homeAdmin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.homeAdmin1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeAdmin1.Location = new System.Drawing.Point(185, 85);
-            this.homeAdmin1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.homeAdmin1.Name = "homeAdmin1";
-            this.homeAdmin1.Size = new System.Drawing.Size(615, 465);
-            this.homeAdmin1.TabIndex = 2;
-            // 
-            // about1
-            // 
-            this.about1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.about1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.about1.ForeColor = System.Drawing.SystemColors.Control;
-            this.about1.Location = new System.Drawing.Point(185, 85);
-            this.about1.Name = "about1";
-            this.about1.Size = new System.Drawing.Size(615, 465);
-            this.about1.TabIndex = 3;
+            this.employeeMnAdmin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.employeeMnAdmin1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeeMnAdmin1.ForeColor = System.Drawing.SystemColors.Control;
+            this.employeeMnAdmin1.Location = new System.Drawing.Point(185, 85);
+            this.employeeMnAdmin1.Name = "employeeMnAdmin1";
+            this.employeeMnAdmin1.Size = new System.Drawing.Size(615, 465);
+            this.employeeMnAdmin1.TabIndex = 5;
             // 
             // attendanceMnAdmin1
             // 
@@ -196,15 +187,25 @@
             this.attendanceMnAdmin1.Size = new System.Drawing.Size(615, 465);
             this.attendanceMnAdmin1.TabIndex = 4;
             // 
-            // employeeMnAdmin1
+            // about1
             // 
-            this.employeeMnAdmin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.employeeMnAdmin1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeeMnAdmin1.ForeColor = System.Drawing.SystemColors.Control;
-            this.employeeMnAdmin1.Location = new System.Drawing.Point(185, 85);
-            this.employeeMnAdmin1.Name = "employeeMnAdmin1";
-            this.employeeMnAdmin1.Size = new System.Drawing.Size(615, 465);
-            this.employeeMnAdmin1.TabIndex = 5;
+            this.about1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.about1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.about1.ForeColor = System.Drawing.SystemColors.Control;
+            this.about1.Location = new System.Drawing.Point(185, 85);
+            this.about1.Name = "about1";
+            this.about1.Size = new System.Drawing.Size(615, 465);
+            this.about1.TabIndex = 3;
+            // 
+            // homeAdmin1
+            // 
+            this.homeAdmin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.homeAdmin1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeAdmin1.Location = new System.Drawing.Point(185, 85);
+            this.homeAdmin1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.homeAdmin1.Name = "homeAdmin1";
+            this.homeAdmin1.Size = new System.Drawing.Size(615, 465);
+            this.homeAdmin1.TabIndex = 2;
             // 
             // MenuAdmin
             // 

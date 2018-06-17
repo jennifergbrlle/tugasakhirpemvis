@@ -15,6 +15,17 @@ namespace TugasAkhirTest
         public EmployeeMnKaryawan()
         {
             InitializeComponent();
+            employeeInfo1.BringToFront();
+        }
+
+        private void employeeinfokaryawan_btn_Click(object sender, EventArgs e)
+        {
+            employeeInfo1.BringToFront();
+        }
+
+        private void cutikaryawan_btn_Click(object sender, EventArgs e)
+        {
+            employeeCuti1.BringToFront();
         }
     }
 }

@@ -141,6 +141,12 @@
     <Compile Include="HomeKaryawan.Designer.cs">
       <DependentUpon>HomeKaryawan.cs</DependentUpon>
     </Compile>
+    <Compile Include="LaporanAbsen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LaporanAbsen.Designer.cs">
+      <DependentUpon>LaporanAbsen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomeKaryawan.resx">
       <DependentUpon>HomeKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanAbsen.resx">
+      <DependentUpon>LaporanAbsen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

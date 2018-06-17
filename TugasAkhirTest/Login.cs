@@ -24,8 +24,10 @@ namespace TugasAkhirTest
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            MenuKaryawan mnkaryawan = new MenuKaryawan();
-            mnkaryawan.Show();
+            //MenuKaryawan mnkaryawan = new MenuKaryawan();
+            //mnkaryawan.Show();
+            MenuAdmin mnadmin = new MenuAdmin();
+            mnadmin.Show();
             this.Hide();
         }
     }

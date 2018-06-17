@@ -96,7 +96,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(288, 99);
+            this.label7.Location = new System.Drawing.Point(310, 99);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 17);
             this.label7.TabIndex = 6;
@@ -105,7 +105,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(288, 136);
+            this.label8.Location = new System.Drawing.Point(310, 136);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 17);
             this.label8.TabIndex = 7;
@@ -114,7 +114,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(288, 173);
+            this.label9.Location = new System.Drawing.Point(310, 173);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(105, 17);
             this.label9.TabIndex = 8;
@@ -124,52 +124,52 @@
             // 
             this.NIIPcuti_txt.Location = new System.Drawing.Point(131, 96);
             this.NIIPcuti_txt.Name = "NIIPcuti_txt";
-            this.NIIPcuti_txt.Size = new System.Drawing.Size(137, 22);
+            this.NIIPcuti_txt.Size = new System.Drawing.Size(157, 22);
             this.NIIPcuti_txt.TabIndex = 9;
             // 
             // namapegawaicuti_txt
             // 
             this.namapegawaicuti_txt.Location = new System.Drawing.Point(131, 133);
             this.namapegawaicuti_txt.Name = "namapegawaicuti_txt";
-            this.namapegawaicuti_txt.Size = new System.Drawing.Size(137, 22);
+            this.namapegawaicuti_txt.Size = new System.Drawing.Size(157, 22);
             this.namapegawaicuti_txt.TabIndex = 10;
             // 
             // divisicuti_txt
             // 
             this.divisicuti_txt.Location = new System.Drawing.Point(131, 170);
             this.divisicuti_txt.Name = "divisicuti_txt";
-            this.divisicuti_txt.Size = new System.Drawing.Size(137, 22);
+            this.divisicuti_txt.Size = new System.Drawing.Size(157, 22);
             this.divisicuti_txt.TabIndex = 11;
             // 
             // jabatancuti_txt
             // 
             this.jabatancuti_txt.Location = new System.Drawing.Point(131, 207);
             this.jabatancuti_txt.Name = "jabatancuti_txt";
-            this.jabatancuti_txt.Size = new System.Drawing.Size(137, 22);
+            this.jabatancuti_txt.Size = new System.Drawing.Size(157, 22);
             this.jabatancuti_txt.TabIndex = 12;
             // 
             // mulaicuti_txt
             // 
             this.mulaicuti_txt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.mulaicuti_txt.Location = new System.Drawing.Point(405, 94);
+            this.mulaicuti_txt.Location = new System.Drawing.Point(427, 94);
             this.mulaicuti_txt.Name = "mulaicuti_txt";
-            this.mulaicuti_txt.Size = new System.Drawing.Size(158, 22);
+            this.mulaicuti_txt.Size = new System.Drawing.Size(157, 22);
             this.mulaicuti_txt.TabIndex = 13;
             // 
             // akhircuti_txt
             // 
             this.akhircuti_txt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.akhircuti_txt.Location = new System.Drawing.Point(405, 131);
+            this.akhircuti_txt.Location = new System.Drawing.Point(427, 131);
             this.akhircuti_txt.Name = "akhircuti_txt";
-            this.akhircuti_txt.Size = new System.Drawing.Size(158, 22);
+            this.akhircuti_txt.Size = new System.Drawing.Size(157, 22);
             this.akhircuti_txt.TabIndex = 14;
             // 
             // keterangancuti_txt
             // 
-            this.keterangancuti_txt.Location = new System.Drawing.Point(405, 170);
+            this.keterangancuti_txt.Location = new System.Drawing.Point(427, 170);
             this.keterangancuti_txt.Multiline = true;
             this.keterangancuti_txt.Name = "keterangancuti_txt";
-            this.keterangancuti_txt.Size = new System.Drawing.Size(158, 59);
+            this.keterangancuti_txt.Size = new System.Drawing.Size(157, 59);
             this.keterangancuti_txt.TabIndex = 15;
             // 
             // ajukancuti_txt
@@ -177,7 +177,7 @@
             this.ajukancuti_txt.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.ajukancuti_txt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ajukancuti_txt.ForeColor = System.Drawing.SystemColors.Control;
-            this.ajukancuti_txt.Location = new System.Drawing.Point(196, 294);
+            this.ajukancuti_txt.Location = new System.Drawing.Point(201, 294);
             this.ajukancuti_txt.Name = "ajukancuti_txt";
             this.ajukancuti_txt.Size = new System.Drawing.Size(87, 32);
             this.ajukancuti_txt.TabIndex = 16;
@@ -187,7 +187,7 @@
             // batalcuti_txt
             // 
             this.batalcuti_txt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.batalcuti_txt.Location = new System.Drawing.Point(308, 294);
+            this.batalcuti_txt.Location = new System.Drawing.Point(313, 294);
             this.batalcuti_txt.Name = "batalcuti_txt";
             this.batalcuti_txt.Size = new System.Drawing.Size(87, 32);
             this.batalcuti_txt.TabIndex = 17;
@@ -218,7 +218,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "EmployeeCuti";
-            this.Size = new System.Drawing.Size(582, 379);
+            this.Size = new System.Drawing.Size(615, 380);
             this.Load += new System.EventHandler(this.EmployeeCuti_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

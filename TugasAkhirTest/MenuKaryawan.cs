@@ -52,5 +52,10 @@ namespace TugasAkhirTest
         {
             this.Close();
         }
+
+        private void employeeMnKaryawan1_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

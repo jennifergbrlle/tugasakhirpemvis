@@ -30,6 +30,8 @@
         {
             this.absensiadmin_btn = new System.Windows.Forms.Button();
             this.laporanabsensiadmin_btn = new System.Windows.Forms.Button();
+            this.absensiAdmin1 = new TugasAkhirTest.AbsensiAdmin();
+            this.laporanAbsen1 = new TugasAkhirTest.LaporanAbsen();
             this.SuspendLayout();
             // 
             // absensiadmin_btn
@@ -41,6 +43,7 @@
             this.absensiadmin_btn.TabIndex = 0;
             this.absensiadmin_btn.Text = "Absensi";
             this.absensiadmin_btn.UseVisualStyleBackColor = true;
+            this.absensiadmin_btn.Click += new System.EventHandler(this.absensiadmin_btn_Click);
             // 
             // laporanabsensiadmin_btn
             // 
@@ -51,11 +54,35 @@
             this.laporanabsensiadmin_btn.TabIndex = 1;
             this.laporanabsensiadmin_btn.Text = "Laporan Absensi";
             this.laporanabsensiadmin_btn.UseVisualStyleBackColor = true;
+            this.laporanabsensiadmin_btn.Click += new System.EventHandler(this.laporanabsensiadmin_btn_Click);
+            // 
+            // absensiAdmin1
+            // 
+            this.absensiAdmin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.absensiAdmin1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.absensiAdmin1.ForeColor = System.Drawing.SystemColors.Control;
+            this.absensiAdmin1.Location = new System.Drawing.Point(0, 85);
+            this.absensiAdmin1.Name = "absensiAdmin1";
+            this.absensiAdmin1.Size = new System.Drawing.Size(615, 380);
+            this.absensiAdmin1.TabIndex = 2;
+            // 
+            // laporanAbsen1
+            // 
+            this.laporanAbsen1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.laporanAbsen1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.laporanAbsen1.ForeColor = System.Drawing.SystemColors.Control;
+            this.laporanAbsen1.Location = new System.Drawing.Point(0, 85);
+            this.laporanAbsen1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.laporanAbsen1.Name = "laporanAbsen1";
+            this.laporanAbsen1.Size = new System.Drawing.Size(615, 380);
+            this.laporanAbsen1.TabIndex = 3;
             // 
             // AttendanceMnAdmin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Controls.Add(this.laporanAbsen1);
+            this.Controls.Add(this.absensiAdmin1);
             this.Controls.Add(this.laporanabsensiadmin_btn);
             this.Controls.Add(this.absensiadmin_btn);
             this.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -70,5 +97,7 @@
 
         private System.Windows.Forms.Button absensiadmin_btn;
         private System.Windows.Forms.Button laporanabsensiadmin_btn;
+        private AbsensiAdmin absensiAdmin1;
+        private LaporanAbsen laporanAbsen1;
     }
 }

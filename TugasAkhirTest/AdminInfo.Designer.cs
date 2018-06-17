@@ -37,8 +37,8 @@
             this.Keterangan = new System.Windows.Forms.DataGridViewLinkColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.search_txt = new System.Windows.Forms.TextBox();
             this.search_btn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.search_txt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.search_btn)).BeginInit();
@@ -55,7 +55,7 @@
             this.Keterangan});
             this.dataGridView1.Location = new System.Drawing.Point(18, 93);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 286);
+            this.dataGridView1.Size = new System.Drawing.Size(579, 286);
             this.dataGridView1.TabIndex = 0;
             // 
             // NIP
@@ -105,13 +105,6 @@
             this.panel1.Size = new System.Drawing.Size(182, 23);
             this.panel1.TabIndex = 2;
             // 
-            // search_txt
-            // 
-            this.search_txt.Location = new System.Drawing.Point(3, 0);
-            this.search_txt.Name = "search_txt";
-            this.search_txt.Size = new System.Drawing.Size(156, 23);
-            this.search_txt.TabIndex = 0;
-            // 
             // search_btn
             // 
             this.search_btn.BackColor = System.Drawing.Color.Transparent;
@@ -125,6 +118,13 @@
             this.search_btn.TabStop = false;
             this.search_btn.Zoom = 10;
             // 
+            // search_txt
+            // 
+            this.search_txt.Location = new System.Drawing.Point(3, 0);
+            this.search_txt.Name = "search_txt";
+            this.search_txt.Size = new System.Drawing.Size(156, 23);
+            this.search_txt.TabIndex = 0;
+            // 
             // AdminInfo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -135,7 +135,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "AdminInfo";
-            this.Size = new System.Drawing.Size(582, 379);
+            this.Size = new System.Drawing.Size(615, 380);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -61,7 +61,7 @@
             this.Absen_Keluar});
             this.dataGridView1.Location = new System.Drawing.Point(0, 89);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(579, 287);
+            this.dataGridView1.Size = new System.Drawing.Size(612, 287);
             this.dataGridView1.TabIndex = 1;
             // 
             // NIP
@@ -104,7 +104,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "AbsenKeluar";
-            this.Size = new System.Drawing.Size(582, 379);
+            this.Size = new System.Drawing.Size(615, 380);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

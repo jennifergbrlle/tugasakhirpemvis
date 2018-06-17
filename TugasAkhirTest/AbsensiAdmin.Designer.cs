@@ -33,12 +33,12 @@
             this.search_btn = new Bunifu.Framework.UI.BunifuImageButton();
             this.search_txt = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.NIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NamaPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Divisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jabatan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Kehadiran = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.search_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -48,7 +48,7 @@
             // 
             this.panel1.Controls.Add(this.search_btn);
             this.panel1.Controls.Add(this.search_txt);
-            this.panel1.Location = new System.Drawing.Point(378, 64);
+            this.panel1.Location = new System.Drawing.Point(411, 55);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(182, 23);
             this.panel1.TabIndex = 4;
@@ -84,18 +84,8 @@
             this.Kehadiran});
             this.dataGridView1.Location = new System.Drawing.Point(17, 93);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 286);
+            this.dataGridView1.Size = new System.Drawing.Size(576, 286);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(222, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Absensi Pegawai";
             // 
             // NIP
             // 
@@ -122,6 +112,16 @@
             this.Kehadiran.HeaderText = "Kehadiran";
             this.Kehadiran.Name = "Kehadiran";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(222, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Absensi Pegawai";
+            // 
             // AbsensiAdmin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -132,7 +132,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "AbsensiAdmin";
-            this.Size = new System.Drawing.Size(582, 379);
+            this.Size = new System.Drawing.Size(615, 380);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.search_btn)).EndInit();

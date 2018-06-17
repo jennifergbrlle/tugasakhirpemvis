@@ -51,5 +51,10 @@ namespace TugasAkhirTest
             sidepanel.Top = aboutadmin_btn.Top;
             about1.BringToFront();
         }
+
+        private void exit_button_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

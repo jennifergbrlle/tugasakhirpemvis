@@ -15,6 +15,17 @@ namespace TugasAkhirTest
         public AttendanceMnKaryawan()
         {
             InitializeComponent();
+            absenMasuk1.BringToFront();
+        }
+
+        private void absenmasuk_btn_Click(object sender, EventArgs e)
+        {
+            absenMasuk1.BringToFront();
+        }
+
+        private void absenkeluar_btn_Click(object sender, EventArgs e)
+        {
+            absenKeluar1.BringToFront();
         }
     }
 }

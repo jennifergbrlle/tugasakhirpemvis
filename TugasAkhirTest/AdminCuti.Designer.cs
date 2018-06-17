@@ -50,7 +50,7 @@
             // batalcuti_txt
             // 
             this.batalcuti_txt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.batalcuti_txt.Location = new System.Drawing.Point(306, 285);
+            this.batalcuti_txt.Location = new System.Drawing.Point(320, 284);
             this.batalcuti_txt.Name = "batalcuti_txt";
             this.batalcuti_txt.Size = new System.Drawing.Size(87, 32);
             this.batalcuti_txt.TabIndex = 33;
@@ -62,7 +62,7 @@
             this.setujucuti_txt.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.setujucuti_txt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.setujucuti_txt.ForeColor = System.Drawing.SystemColors.Control;
-            this.setujucuti_txt.Location = new System.Drawing.Point(194, 285);
+            this.setujucuti_txt.Location = new System.Drawing.Point(208, 284);
             this.setujucuti_txt.Name = "setujucuti_txt";
             this.setujucuti_txt.Size = new System.Drawing.Size(87, 32);
             this.setujucuti_txt.TabIndex = 32;
@@ -71,7 +71,7 @@
             // 
             // keterangancuti_txt
             // 
-            this.keterangancuti_txt.Location = new System.Drawing.Point(403, 167);
+            this.keterangancuti_txt.Location = new System.Drawing.Point(419, 167);
             this.keterangancuti_txt.Multiline = true;
             this.keterangancuti_txt.Name = "keterangancuti_txt";
             this.keterangancuti_txt.Size = new System.Drawing.Size(158, 59);
@@ -81,34 +81,34 @@
             // 
             this.jabatancuti_txt.Location = new System.Drawing.Point(129, 204);
             this.jabatancuti_txt.Name = "jabatancuti_txt";
-            this.jabatancuti_txt.Size = new System.Drawing.Size(137, 22);
+            this.jabatancuti_txt.Size = new System.Drawing.Size(152, 22);
             this.jabatancuti_txt.TabIndex = 28;
             // 
             // divisicuti_txt
             // 
             this.divisicuti_txt.Location = new System.Drawing.Point(129, 167);
             this.divisicuti_txt.Name = "divisicuti_txt";
-            this.divisicuti_txt.Size = new System.Drawing.Size(137, 22);
+            this.divisicuti_txt.Size = new System.Drawing.Size(152, 22);
             this.divisicuti_txt.TabIndex = 27;
             // 
             // namapegawaicuti_txt
             // 
             this.namapegawaicuti_txt.Location = new System.Drawing.Point(129, 130);
             this.namapegawaicuti_txt.Name = "namapegawaicuti_txt";
-            this.namapegawaicuti_txt.Size = new System.Drawing.Size(137, 22);
+            this.namapegawaicuti_txt.Size = new System.Drawing.Size(152, 22);
             this.namapegawaicuti_txt.TabIndex = 26;
             // 
             // NIIPcuti_txt
             // 
             this.NIIPcuti_txt.Location = new System.Drawing.Point(129, 93);
             this.NIIPcuti_txt.Name = "NIIPcuti_txt";
-            this.NIIPcuti_txt.Size = new System.Drawing.Size(137, 22);
+            this.NIIPcuti_txt.Size = new System.Drawing.Size(152, 22);
             this.NIIPcuti_txt.TabIndex = 25;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(286, 170);
+            this.label9.Location = new System.Drawing.Point(302, 170);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(105, 17);
             this.label9.TabIndex = 24;
@@ -117,7 +117,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(286, 133);
+            this.label8.Location = new System.Drawing.Point(302, 133);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 17);
             this.label8.TabIndex = 23;
@@ -126,7 +126,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(286, 96);
+            this.label7.Location = new System.Drawing.Point(302, 96);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 17);
             this.label7.TabIndex = 22;
@@ -180,14 +180,14 @@
             // 
             // mulaicuti_txt
             // 
-            this.mulaicuti_txt.Location = new System.Drawing.Point(403, 96);
+            this.mulaicuti_txt.Location = new System.Drawing.Point(419, 96);
             this.mulaicuti_txt.Name = "mulaicuti_txt";
             this.mulaicuti_txt.Size = new System.Drawing.Size(158, 22);
             this.mulaicuti_txt.TabIndex = 35;
             // 
             // akhircuti_txt
             // 
-            this.akhircuti_txt.Location = new System.Drawing.Point(403, 130);
+            this.akhircuti_txt.Location = new System.Drawing.Point(419, 130);
             this.akhircuti_txt.Name = "akhircuti_txt";
             this.akhircuti_txt.Size = new System.Drawing.Size(158, 22);
             this.akhircuti_txt.TabIndex = 36;
@@ -216,7 +216,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "AdminCuti";
-            this.Size = new System.Drawing.Size(582, 379);
+            this.Size = new System.Drawing.Size(615, 380);
             this.ResumeLayout(false);
             this.PerformLayout();
 

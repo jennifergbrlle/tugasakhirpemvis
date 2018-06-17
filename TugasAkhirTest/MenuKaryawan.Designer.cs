@@ -33,11 +33,11 @@
             this.exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.sidemenu = new System.Windows.Forms.Panel();
+            this.sidepanel = new System.Windows.Forms.Panel();
             this.aboutkaryawan_btn = new System.Windows.Forms.Button();
             this.attendancekaryawan_btn = new System.Windows.Forms.Button();
             this.employeekaryawan_btn = new System.Windows.Forms.Button();
             this.homekaryawan_btn = new System.Windows.Forms.Button();
-            this.sidepanel = new System.Windows.Forms.Panel();
             this.attendanceMnKaryawan1 = new TugasAkhirTest.AttendanceMnKaryawan();
             this.employeeMnKaryawan1 = new TugasAkhirTest.EmployeeMnKaryawan();
             this.about1 = new TugasAkhirTest.About();
@@ -94,6 +94,14 @@
             this.sidemenu.Name = "sidemenu";
             this.sidemenu.Size = new System.Drawing.Size(185, 510);
             this.sidemenu.TabIndex = 2;
+            // 
+            // sidepanel
+            // 
+            this.sidepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
+            this.sidepanel.Location = new System.Drawing.Point(0, 137);
+            this.sidepanel.Name = "sidepanel";
+            this.sidepanel.Size = new System.Drawing.Size(13, 37);
+            this.sidepanel.TabIndex = 5;
             // 
             // aboutkaryawan_btn
             // 
@@ -159,14 +167,6 @@
             this.homekaryawan_btn.UseVisualStyleBackColor = true;
             this.homekaryawan_btn.Click += new System.EventHandler(this.homekaryawan_btn_Click);
             // 
-            // sidepanel
-            // 
-            this.sidepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.sidepanel.Location = new System.Drawing.Point(0, 137);
-            this.sidepanel.Name = "sidepanel";
-            this.sidepanel.Size = new System.Drawing.Size(13, 37);
-            this.sidepanel.TabIndex = 5;
-            // 
             // attendanceMnKaryawan1
             // 
             this.attendanceMnKaryawan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -186,6 +186,7 @@
             this.employeeMnKaryawan1.Name = "employeeMnKaryawan1";
             this.employeeMnKaryawan1.Size = new System.Drawing.Size(615, 465);
             this.employeeMnKaryawan1.TabIndex = 5;
+            this.employeeMnKaryawan1.Load += new System.EventHandler(this.employeeMnKaryawan1_Load);
             // 
             // about1
             // 

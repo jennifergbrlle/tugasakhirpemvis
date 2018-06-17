@@ -15,6 +15,17 @@ namespace TugasAkhirTest
         public AttendanceMnAdmin()
         {
             InitializeComponent();
+            absensiAdmin1.BringToFront();
+        }
+
+        private void absensiadmin_btn_Click(object sender, EventArgs e)
+        {
+            absensiAdmin1.BringToFront();
+        }
+
+        private void laporanabsensiadmin_btn_Click(object sender, EventArgs e)
+        {
+            laporanAbsen1.BringToFront();
         }
     }
 }
