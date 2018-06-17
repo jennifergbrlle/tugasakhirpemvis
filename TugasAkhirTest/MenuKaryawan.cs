@@ -50,7 +50,7 @@ namespace TugasAkhirTest
 
         private void exit_button_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void employeeMnKaryawan1_Load(object sender, EventArgs e)

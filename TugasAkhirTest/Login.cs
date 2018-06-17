@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace TugasAkhirTest
 {
     public partial class Login : Form
     {
+        MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
+        int i;
         public Login()
         {
             InitializeComponent();
@@ -19,16 +22,41 @@ namespace TugasAkhirTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            //MenuKaryawan mnkaryawan = new MenuKaryawan();
-            //mnkaryawan.Show();
-            MenuAdmin mnadmin = new MenuAdmin();
-            mnadmin.Show();
-            this.Hide();
+            i = 0;
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText="select level from user where username='"+username_txt.Text+"' and password='"+password_txt.Text+"'";
+            //cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            //i = Convert.ToInt32(dt.Rows.Count.ToString());
+            if (dt.Rows.Count == 1)
+            {
+                this.Hide();
+                if (dt.Rows[0][0].ToString()== "admin")
+                {
+                    MenuAdmin mnadmin = new MenuAdmin();
+                    mnadmin.Show();
+                }
+                else
+                {
+                    MenuKaryawan mnkaryawan = new MenuKaryawan();
+                    mnkaryawan.Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password");
+            }
+            con.Close();
+            
         }
     }
 }

@@ -54,7 +54,7 @@ namespace TugasAkhirTest
 
         private void exit_button_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
