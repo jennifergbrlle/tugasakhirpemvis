@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6A19DEE-694F-406D-9736-467653D0D078}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TugasAkhirTest</RootNamespace>
+    <AssemblyName>TugasAkhirTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsenKeluar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AbsenKeluar.Designer.cs">
+      <DependentUpon>AbsenKeluar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsenMasuk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AbsenMasuk.Designer.cs">
+      <DependentUpon>AbsenMasuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsensiAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AbsensiAdmin.Designer.cs">
+      <DependentUpon>AbsensiAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPegawai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddPegawai.Designer.cs">
+      <DependentUpon>AddPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCuti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminCuti.Designer.cs">
+      <DependentUpon>AdminCuti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminInfo.Designer.cs">
+      <DependentUpon>AdminInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceMnAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AttendanceMnAdmin.Designer.cs">
+      <DependentUpon>AttendanceMnAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceMnKaryawan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AttendanceMnKaryawan.Designer.cs">
+      <DependentUpon>AttendanceMnKaryawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeCuti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeCuti.Designer.cs">
+      <DependentUpon>EmployeeCuti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeInfo.Designer.cs">
+      <DependentUpon>EmployeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMnAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeMnAdmin.Designer.cs">
+      <DependentUpon>EmployeeMnAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeMnKaryawan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeMnKaryawan.Designer.cs">
+      <DependentUpon>EmployeeMnKaryawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeAdmin.Designer.cs">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeKaryawan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeKaryawan.Designer.cs">
+      <DependentUpon>HomeKaryawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdmin.Designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuKaryawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuKaryawan.Designer.cs">
+      <DependentUpon>MenuKaryawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdatePegawai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdatePegawai.Designer.cs">
+      <DependentUpon>UpdatePegawai.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsenKeluar.resx">
+      <DependentUpon>AbsenKeluar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsenMasuk.resx">
+      <DependentUpon>AbsenMasuk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsensiAdmin.resx">
+      <DependentUpon>AbsensiAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPegawai.resx">
+      <DependentUpon>AddPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCuti.resx">
+      <DependentUpon>AdminCuti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInfo.resx">
+      <DependentUpon>AdminInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceMnAdmin.resx">
+      <DependentUpon>AttendanceMnAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceMnKaryawan.resx">
+      <DependentUpon>AttendanceMnKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeCuti.resx">
+      <DependentUpon>EmployeeCuti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeInfo.resx">
+      <DependentUpon>EmployeeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMnAdmin.resx">
+      <DependentUpon>EmployeeMnAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeMnKaryawan.resx">
+      <DependentUpon>EmployeeMnKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeAdmin.resx">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeKaryawan.resx">
+      <DependentUpon>HomeKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuKaryawan.resx">
+      <DependentUpon>MenuKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UpdatePegawai.resx">
+      <DependentUpon>UpdatePegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
