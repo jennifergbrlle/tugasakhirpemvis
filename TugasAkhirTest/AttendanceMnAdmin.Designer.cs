@@ -30,8 +30,8 @@
         {
             this.absensiadmin_btn = new System.Windows.Forms.Button();
             this.laporanabsensiadmin_btn = new System.Windows.Forms.Button();
-            this.absensiAdmin1 = new TugasAkhirTest.AbsensiAdmin();
             this.laporanAbsen1 = new TugasAkhirTest.LaporanAbsen();
+            this.absensiAdmin1 = new TugasAkhirTest.AbsensiAdmin();
             this.SuspendLayout();
             // 
             // absensiadmin_btn
@@ -56,16 +56,6 @@
             this.laporanabsensiadmin_btn.UseVisualStyleBackColor = true;
             this.laporanabsensiadmin_btn.Click += new System.EventHandler(this.laporanabsensiadmin_btn_Click);
             // 
-            // absensiAdmin1
-            // 
-            this.absensiAdmin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.absensiAdmin1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.absensiAdmin1.ForeColor = System.Drawing.SystemColors.Control;
-            this.absensiAdmin1.Location = new System.Drawing.Point(0, 85);
-            this.absensiAdmin1.Name = "absensiAdmin1";
-            this.absensiAdmin1.Size = new System.Drawing.Size(615, 380);
-            this.absensiAdmin1.TabIndex = 2;
-            // 
             // laporanAbsen1
             // 
             this.laporanAbsen1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -76,6 +66,16 @@
             this.laporanAbsen1.Name = "laporanAbsen1";
             this.laporanAbsen1.Size = new System.Drawing.Size(615, 380);
             this.laporanAbsen1.TabIndex = 3;
+            // 
+            // absensiAdmin1
+            // 
+            this.absensiAdmin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.absensiAdmin1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.absensiAdmin1.ForeColor = System.Drawing.SystemColors.Control;
+            this.absensiAdmin1.Location = new System.Drawing.Point(0, 85);
+            this.absensiAdmin1.Name = "absensiAdmin1";
+            this.absensiAdmin1.Size = new System.Drawing.Size(615, 380);
+            this.absensiAdmin1.TabIndex = 2;
             // 
             // AttendanceMnAdmin
             // 

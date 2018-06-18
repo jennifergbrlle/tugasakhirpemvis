@@ -31,7 +31,7 @@ namespace TugasAkhirTest
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText="select level from user where username='"+username_txt.Text+"' and password='"+password_txt.Text+"'";
+            cmd.CommandText="select level,nip from user, pegawai where user.username like pegawai.nip and username='"+username_txt.Text+"' and password='"+password_txt.Text+"'";
             //cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);

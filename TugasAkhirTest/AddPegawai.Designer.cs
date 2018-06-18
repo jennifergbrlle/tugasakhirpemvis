@@ -619,6 +619,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "AddPegawai";
             this.Size = new System.Drawing.Size(615, 380);
+            this.Load += new System.EventHandler(this.AddPegawai_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

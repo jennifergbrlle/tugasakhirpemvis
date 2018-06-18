@@ -30,11 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminInfo));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.NIP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NamaPegawai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Divisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Jabatan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Keterangan = new System.Windows.Forms.DataGridViewLinkColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.search_btn = new Bunifu.Framework.UI.BunifuImageButton();
@@ -47,44 +42,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NIP,
-            this.NamaPegawai,
-            this.Divisi,
-            this.Jabatan,
-            this.Keterangan});
-            this.dataGridView1.Location = new System.Drawing.Point(18, 93);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 93);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(579, 286);
+            this.dataGridView1.Size = new System.Drawing.Size(609, 286);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // NIP
-            // 
-            this.NIP.HeaderText = "NIP";
-            this.NIP.Name = "NIP";
-            // 
-            // NamaPegawai
-            // 
-            this.NamaPegawai.HeaderText = "Nama Pegawai";
-            this.NamaPegawai.Name = "NamaPegawai";
-            // 
-            // Divisi
-            // 
-            this.Divisi.HeaderText = "Divisi";
-            this.Divisi.Name = "Divisi";
-            // 
-            // Jabatan
-            // 
-            this.Jabatan.HeaderText = "Jabatan";
-            this.Jabatan.Name = "Jabatan";
-            // 
-            // Keterangan
-            // 
-            this.Keterangan.HeaderText = "";
-            this.Keterangan.Name = "Keterangan";
-            this.Keterangan.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Keterangan.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Keterangan.Text = "Details";
             // 
             // label1
             // 
@@ -148,11 +109,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NIP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NamaPegawai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Divisi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Jabatan;
-        private System.Windows.Forms.DataGridViewLinkColumn Keterangan;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton search_btn;

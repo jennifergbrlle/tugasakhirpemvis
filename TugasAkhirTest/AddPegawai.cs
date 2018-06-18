@@ -21,5 +21,10 @@ namespace TugasAkhirTest
         {
 
         }
+
+        private void AddPegawai_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
