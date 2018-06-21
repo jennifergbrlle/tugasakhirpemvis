@@ -64,5 +64,10 @@ namespace TugasAkhirTest
                 login_btn_Click(this, new EventArgs());
             }
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
