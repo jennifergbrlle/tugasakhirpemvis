@@ -224,6 +224,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuKaryawan";
             this.Text = "MenuKaryawan";
+            this.Load += new System.EventHandler(this.MenuKaryawan_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.sidemenu.ResumeLayout(false);

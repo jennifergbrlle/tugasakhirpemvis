@@ -30,9 +30,9 @@
         {
             this.employeeinfokaryawan_btn = new System.Windows.Forms.Button();
             this.cutikaryawan_btn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.employeeInfo1 = new TugasAkhirTest.EmployeeInfo();
             this.employeeCuti1 = new TugasAkhirTest.EmployeeCuti();
+            this.employeeInfo1 = new TugasAkhirTest.EmployeeInfo();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,15 +61,15 @@
             this.cutikaryawan_btn.UseVisualStyleBackColor = true;
             this.cutikaryawan_btn.Click += new System.EventHandler(this.cutikaryawan_btn_Click);
             // 
-            // panel1
+            // employeeCuti1
             // 
-            this.panel1.Controls.Add(this.employeeCuti1);
-            this.panel1.Controls.Add(this.employeeInfo1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 85);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(615, 380);
-            this.panel1.TabIndex = 2;
+            this.employeeCuti1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.employeeCuti1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeeCuti1.ForeColor = System.Drawing.SystemColors.Control;
+            this.employeeCuti1.Location = new System.Drawing.Point(0, -3);
+            this.employeeCuti1.Name = "employeeCuti1";
+            this.employeeCuti1.Size = new System.Drawing.Size(615, 380);
+            this.employeeCuti1.TabIndex = 1;
             // 
             // employeeInfo1
             // 
@@ -80,16 +80,17 @@
             this.employeeInfo1.Name = "employeeInfo1";
             this.employeeInfo1.Size = new System.Drawing.Size(615, 380);
             this.employeeInfo1.TabIndex = 0;
+            this.employeeInfo1.Load += new System.EventHandler(this.employeeInfo1_Load);
             // 
-            // employeeCuti1
+            // panel1
             // 
-            this.employeeCuti1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.employeeCuti1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeeCuti1.ForeColor = System.Drawing.SystemColors.Control;
-            this.employeeCuti1.Location = new System.Drawing.Point(0, -3);
-            this.employeeCuti1.Name = "employeeCuti1";
-            this.employeeCuti1.Size = new System.Drawing.Size(615, 380);
-            this.employeeCuti1.TabIndex = 1;
+            this.panel1.Controls.Add(this.employeeInfo1);
+            this.panel1.Controls.Add(this.employeeCuti1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 85);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(615, 380);
+            this.panel1.TabIndex = 2;
             // 
             // EmployeeMnKaryawan
             // 
@@ -102,6 +103,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "EmployeeMnKaryawan";
             this.Size = new System.Drawing.Size(615, 465);
+            this.Load += new System.EventHandler(this.EmployeeMnKaryawan_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -111,8 +113,8 @@
 
         private System.Windows.Forms.Button employeeinfokaryawan_btn;
         private System.Windows.Forms.Button cutikaryawan_btn;
-        private System.Windows.Forms.Panel panel1;
         private EmployeeCuti employeeCuti1;
         private EmployeeInfo employeeInfo1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

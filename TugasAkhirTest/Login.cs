@@ -14,7 +14,6 @@ namespace TugasAkhirTest
     public partial class Login : Form
     {
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
-        int i;
         public Login()
         {
             InitializeComponent();
@@ -27,7 +26,6 @@ namespace TugasAkhirTest
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            i = 0;
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
@@ -40,7 +38,7 @@ namespace TugasAkhirTest
             if (dt.Rows.Count == 1)
             {
                 this.Hide();
-                if (dt.Rows[0][0].ToString()== "admin")
+                if (dt.Rows[0][0].ToString() == "admin")
                 {
                     MenuAdmin mnadmin = new MenuAdmin();
                     mnadmin.Show();

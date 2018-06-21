@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdatePegawai));
             this.batalupdate_btn = new System.Windows.Forms.Button();
             this.update_btn = new System.Windows.Forms.Button();
             this.tglmasukupdate_txt = new System.Windows.Forms.DateTimePicker();
@@ -78,6 +79,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.namadepanupdate_txt = new System.Windows.Forms.TextBox();
+            this.NIPsearch_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // batalupdate_btn
@@ -289,7 +291,7 @@
             this.nipupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nipupdate_txt.Location = new System.Drawing.Point(428, 14);
             this.nipupdate_txt.Name = "nipupdate_txt";
-            this.nipupdate_txt.Size = new System.Drawing.Size(166, 21);
+            this.nipupdate_txt.Size = new System.Drawing.Size(137, 21);
             this.nipupdate_txt.TabIndex = 128;
             // 
             // notelpupdate_txt
@@ -561,10 +563,22 @@
             this.namadepanupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.namadepanupdate_txt.TabIndex = 122;
             // 
+            // NIPsearch_btn
+            // 
+            this.NIPsearch_btn.FlatAppearance.BorderSize = 0;
+            this.NIPsearch_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NIPsearch_btn.Image = ((System.Drawing.Image)(resources.GetObject("NIPsearch_btn.Image")));
+            this.NIPsearch_btn.Location = new System.Drawing.Point(567, 12);
+            this.NIPsearch_btn.Name = "NIPsearch_btn";
+            this.NIPsearch_btn.Size = new System.Drawing.Size(25, 25);
+            this.NIPsearch_btn.TabIndex = 150;
+            this.NIPsearch_btn.UseVisualStyleBackColor = true;
+            // 
             // UpdatePegawai
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Controls.Add(this.NIPsearch_btn);
             this.Controls.Add(this.batalupdate_btn);
             this.Controls.Add(this.update_btn);
             this.Controls.Add(this.tglmasukupdate_txt);
@@ -675,5 +689,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox namadepanupdate_txt;
+        private System.Windows.Forms.Button NIPsearch_btn;
     }
 }

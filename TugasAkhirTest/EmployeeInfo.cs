@@ -18,13 +18,18 @@ namespace TugasAkhirTest
         {
             InitializeComponent();
             con.Open();
-            MySqlCommand cmd = con.CreateCommand();
+            MySqlCommand cmd = new MySqlCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select *, username from employeeinfo, user where user.username like employeeinfo.nip and nip = '"+NIPinfo_txt.Text+"' ";
+            cmd.CommandText = "select * from employeeinfo, user where user.username = employeeinfo.nip";
             //cmd.ExecuteNonQuery();
+            //DataTable dt = new DataTable();
+            //MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            cmd.Connection = con;
             MySqlDataReader dr = cmd.ExecuteReader();
-            if (dr.Read())
+            //da.Fill(dt);
+            while (dr.Read())
             {
+                NIPinfo_txt.Text = (dr["NIP"].ToString());
                 namapegawaiinfo_txt.Text = (dr["NamaPegawai"].ToString());
                 jeniskelamininfo_txt.Text = (dr["JenisKelamin"].ToString());
                 ttlinfo_txt.Text = (dr["TempatTglLahir"].ToString());
@@ -46,6 +51,16 @@ namespace TugasAkhirTest
                 cabangbankinfo_txt.Text = (dr["CabangBank"].ToString());
             }
             con.Close();
+        }
+
+        private void EmployeeInfo_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -163,10 +163,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.TextBox password_txt;
-        private System.Windows.Forms.TextBox username_txt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox username_txt;
     }
 }
 

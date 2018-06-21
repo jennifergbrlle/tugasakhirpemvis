@@ -16,5 +16,10 @@ namespace TugasAkhirTest
         {
             InitializeComponent();
         }
+
+        private void AdminCuti_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
