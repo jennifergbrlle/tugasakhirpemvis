@@ -64,5 +64,10 @@ namespace TugasAkhirTest
                 login_btn_Click(this, new EventArgs());
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            username_txt.Select();
+        }
     }
 }

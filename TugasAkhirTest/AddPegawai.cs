@@ -18,21 +18,59 @@ namespace TugasAkhirTest
         {
             InitializeComponent();
         }
-
+        MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
         Regex isAllLetters = new Regex(@"^[a-zA-Z]+$");
         Regex isAlphaNumeric = new Regex(@"^[a-zA-Z0-9/. -]+$");
         Regex isAllNumbers = new Regex(@"^\d+$");
         String namadepan, namabelakang, jeniskelamin, tempatlahir,
             tanggallahir, agama, pendidikan, alamat, statusalamat, notelp, goldarah,
             divisi, jabatan, tanggalmasuk, noktp, nosim, npwp, norek, namarek, namabank, cabangbank;
+        private String koneksi;
+        MySqlConnection konek;
+        MySqlCommand sqlquery;
 
+        private void connect_mysql()
+        {
+            try
+            {
+                koneksi = "Server=localhost;Database=sistem_pegawai;Uid=root;Pwd=;";
+                konek = new MySqlConnection(koneksi);
+                konek.Open();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+        private void createNIP()
+        {
+            Random rnd = new Random();
+            int nip1 = rnd.Next(100, 1000);
+            nip = nip1 + 1000;
+
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT NIP FROM pegawai WHERE NIP = '" + nip + "'";
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            if(dt.Rows.Count == 1)
+            {
+                nip1 = rnd.Next(100, 1000);
+                nip = nip1 + 1000;
+            }
+            else
+            {
+                nipadd_txt.Text = nip.ToString();
+            }
+        }
         private void clearForm()
         {
             namadepanadd_txt.Text = null;
             namabelakangadd_txt.Text = null;
             lakilakiadd_btn.Checked = false;
             perempuanadd_btn.Checked = false;
-            tempatlahiradd_btn.Text = null;
             tempatlahiradd_btn.SelectedIndex = -1;
             agamaadd_txt.SelectedIndex = -1;
             pendidikanadd_txt.SelectedIndex = -1;
@@ -112,7 +150,7 @@ namespace TugasAkhirTest
 
         private void norekadd_txt_Validating(object sender, CancelEventArgs e)
         {
-            if (String.IsNullOrWhiteSpace(npwpadd_txt.Text))
+            if (String.IsNullOrWhiteSpace(norekadd_txt.Text))
             {
                 errorProvider16.SetError(norekadd_txt, "Silahkan Masukkan Nomor Rekening");
                 simpanadd_btn.Enabled = false;
@@ -145,7 +183,7 @@ namespace TugasAkhirTest
 
         private void cabangbankadd_txt_Validating(object sender, CancelEventArgs e)
         {
-            if (String.IsNullOrWhiteSpace(alamatadd_txt.Text))
+            if (String.IsNullOrWhiteSpace(cabangbankadd_txt.Text))
             {
                 errorProvider18.SetError(cabangbankadd_txt, "Silahkan Masukkan Alamat Anda");
                 simpanadd_btn.Enabled = false;
@@ -182,6 +220,25 @@ namespace TugasAkhirTest
             else
             {
                 errorProvider19.SetError(nipadd_txt, null);
+                simpanadd_btn.Enabled = true;
+            }
+        }
+
+        private void namarekadd_txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(namarekadd_txt.Text))
+            {
+                errorProvider20.SetError(namarekadd_txt, "Silahkan Masukkan Nomor Rekening");
+                simpanadd_btn.Enabled = false;
+            }
+            else if (namarekadd_txt.Text.Length < 3 || namarekadd_txt.Text.Length > 40 || !isAllLetters.IsMatch(notelpadd_txt.Text))
+            {
+                errorProvider20.SetError(namarekadd_txt, "Hanya Huruf, Minimal 6 Karakter, Maksimal 13 Karakter");
+                simpanadd_btn.Enabled = false;
+            }
+            else
+            {
+                errorProvider20.SetError(namarekadd_txt, null);
                 simpanadd_btn.Enabled = true;
             }
         }
@@ -378,10 +435,7 @@ namespace TugasAkhirTest
         private int nip;
         private void AddPegawai_Load(object sender, EventArgs e)
         {
-            Random rnd = new Random();
-            int nip1 = rnd.Next(100, 1000);
-            nip = nip1 + 1000;
-            nipadd_txt.Text = nip.ToString();
+            createNIP();
             try
             {
                 //SELECT * from sistem_pegawai.jabatan
@@ -421,23 +475,7 @@ namespace TugasAkhirTest
             }
         }
 
-        private String koneksi;
-        MySqlConnection konek;
-        MySqlCommand sqlquery;
         
-        private void connect_mysql()
-        {
-            try
-            {
-                koneksi = "Server=localhost;Database=sistem_pegawai;Uid=root;Pwd=;";
-                konek = new MySqlConnection(koneksi);
-                konek.Open();
-            }
-            catch(Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
-        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -458,10 +496,6 @@ namespace TugasAkhirTest
                 else if (perempuanadd_btn.Checked == true)
                 {
                     jeniskelamin = perempuanadd_btn.Text;
-                }
-                else
-                {
-                    MessageBox.Show("Pilihan Jenis Kelamin Tidak Sesuai");
                 }
                 tempatlahir = tempatlahiradd_btn.Text;
                 tanggallahir = tgllahiradd_date.Value.ToString("dd-mm-yyyy");
@@ -487,18 +521,12 @@ namespace TugasAkhirTest
                 {
                     goldarah = golABadd_btn.Text;
                 }
-                else
-                {
-                    MessageBox.Show("Pilihan Golongan Darah Tidak Sesuai");
-                }
                 divisi = divisiadd_txt.Text;
                 jabatan = jabatanadd_txt.Text;
                 tanggalmasuk = tglmasukadd_txt.Value.ToString("dd-mm-yyyy");
                 noktp = noktpadd_txt.Text;
                 nosim = nosimadd_txt.Text;
                 npwp = npwpadd_txt.Text;
-                divisi = divisiadd_txt.Text;
-                jabatan = jabatanadd_txt.Text;
                 norek = norekadd_txt.Text;
                 namarek = namarekadd_txt.Text;
                 namabank = namabankadd_txt.Text;
@@ -508,17 +536,19 @@ namespace TugasAkhirTest
                 try
                 {
                     sqlquery = konek.CreateCommand();
-                    sqlquery.CommandText = "INSERT INTO pegawai(NamaDepan, NamaBelakang, JenisKelamin, TempatLahir, TanggalLahir, Alamat, Status_alamat, Agama, NoTelp, Pendidikan, GolDarah, NIP, TanggalMasuk, NoKTP, NoSIM, No_NPWP, KodeDiv, KodeJabat, NoRek, NamaBank, CabangBank)" +
-                        "VALUES('" + namadepan + "','" + namabelakang + "','" + jeniskelamin + "','" + tempatlahir + "','" + tanggallahir + "','" + alamat + "','" + statusalamat + "','" + agama + "','" + notelp + "','" + pendidikan + "','" + goldarah + "','" + nip + "','" + tanggalmasuk + "','" + noktp + "','" + nosim + "','" + npwp + "','" + divisi + "','" + jabatan + "','" + norek + "','" + namabank + "','" + cabangbank + "')";
+                    sqlquery.CommandText = "INSERT INTO pegawai(NamaDepan, NamaBelakang, JenisKelamin, TempatLahir, TanggalLahir, Alamat, Status_alamat, Agama, NoTelp, Pendidikan, GolDarah, NIP, TglMasuk, NoKTP, NoSIM, No_NPWP, KodeDiv, KodeJabat, NoRek, NamaRek, NamaBank, CabangBank)" +
+                        "VALUES('" + namadepan + "','" + namabelakang + "','" + jeniskelamin + "','" + tempatlahir + "','" + tanggallahir + "','" + alamat + "','" + statusalamat + "','" + agama + "','" + notelp + "','" + pendidikan + "','" + goldarah + "','" + nip + "','" + tanggalmasuk + "','" + noktp + "','" + nosim + "','" + npwp + "','" + divisi + "','" + jabatan + "','" + norek + "','"+namarek+"','" + namabank + "','" + cabangbank + "')";
                     sqlquery.ExecuteNonQuery();
-                    MessageBox.Show("Data disimpan");
+                    MessageBox.Show("Data Berhasil isimpan");
                     konek.Close();
+                    clearForm();
+                    createNIP();
+                    
                 }
                 catch (Exception T)
                 {
                     MessageBox.Show(T.Message);
                 }
-                clearForm();
             }
         }
     }
