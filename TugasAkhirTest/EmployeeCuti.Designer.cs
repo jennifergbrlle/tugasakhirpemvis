@@ -150,7 +150,8 @@
             // 
             // mulaicuti_txt
             // 
-            this.mulaicuti_txt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.mulaicuti_txt.CustomFormat = "yyyy-MM-dd";
+            this.mulaicuti_txt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.mulaicuti_txt.Location = new System.Drawing.Point(427, 94);
             this.mulaicuti_txt.Name = "mulaicuti_txt";
             this.mulaicuti_txt.Size = new System.Drawing.Size(157, 22);
@@ -158,7 +159,8 @@
             // 
             // akhircuti_txt
             // 
-            this.akhircuti_txt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.akhircuti_txt.CustomFormat = "yyyy-MM-dd";
+            this.akhircuti_txt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.akhircuti_txt.Location = new System.Drawing.Point(427, 131);
             this.akhircuti_txt.Name = "akhircuti_txt";
             this.akhircuti_txt.Size = new System.Drawing.Size(157, 22);
@@ -183,6 +185,7 @@
             this.ajukancuti_txt.TabIndex = 16;
             this.ajukancuti_txt.Text = "AJUKAN";
             this.ajukancuti_txt.UseVisualStyleBackColor = true;
+            this.ajukancuti_txt.Click += new System.EventHandler(this.ajukancuti_txt_Click);
             // 
             // batalcuti_txt
             // 

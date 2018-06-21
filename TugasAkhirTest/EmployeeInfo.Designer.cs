@@ -48,26 +48,26 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.NIPinfo_txt = new System.Windows.Forms.TextBox();
-            this.namapegawaiinfo_txt = new System.Windows.Forms.TextBox();
-            this.jeniskelamininfo_txt = new System.Windows.Forms.TextBox();
-            this.ttlinfo_txt = new System.Windows.Forms.TextBox();
-            this.agamainfo_txt = new System.Windows.Forms.TextBox();
-            this.pendidikaninfo_txt = new System.Windows.Forms.TextBox();
-            this.alamatinfo_txt = new System.Windows.Forms.TextBox();
-            this.statusalamatinfo_txt = new System.Windows.Forms.TextBox();
-            this.notelpinfo_txt = new System.Windows.Forms.TextBox();
-            this.goldarahinfo_txt = new System.Windows.Forms.TextBox();
-            this.divisiinfo_txt = new System.Windows.Forms.TextBox();
-            this.namarekinfo_txt = new System.Windows.Forms.TextBox();
-            this.jabataninfo_txt = new System.Windows.Forms.TextBox();
-            this.tglmasukinfo_txt = new System.Windows.Forms.TextBox();
-            this.noktpinfo_txt = new System.Windows.Forms.TextBox();
-            this.nosiminfo_txt = new System.Windows.Forms.TextBox();
-            this.npwpinfo_txt = new System.Windows.Forms.TextBox();
-            this.norekinfo_txt = new System.Windows.Forms.TextBox();
-            this.namabankinfo_txt = new System.Windows.Forms.TextBox();
-            this.cabangbankinfo_txt = new System.Windows.Forms.TextBox();
+            this.NIPinfo_txt = new System.Windows.Forms.Label();
+            this.namapegawaiinfo_txt = new System.Windows.Forms.Label();
+            this.jeniskelamininfo_txt = new System.Windows.Forms.Label();
+            this.ttlinfo_txt = new System.Windows.Forms.Label();
+            this.agamainfo_txt = new System.Windows.Forms.Label();
+            this.pendidikaninfo_txt = new System.Windows.Forms.Label();
+            this.alamatinfo_txt = new System.Windows.Forms.Label();
+            this.statusalamatinfo_txt = new System.Windows.Forms.Label();
+            this.notelpinfo_txt = new System.Windows.Forms.Label();
+            this.goldarahinfo_txt = new System.Windows.Forms.Label();
+            this.divisiinfo_txt = new System.Windows.Forms.Label();
+            this.jabataninfo_txt = new System.Windows.Forms.Label();
+            this.tglmasukinfo_txt = new System.Windows.Forms.Label();
+            this.noktpinfo_txt = new System.Windows.Forms.Label();
+            this.nosiminfo_txt = new System.Windows.Forms.Label();
+            this.npwpinfo_txt = new System.Windows.Forms.Label();
+            this.norekinfo_txt = new System.Windows.Forms.Label();
+            this.namarekinfo_txt = new System.Windows.Forms.Label();
+            this.namabankinfo_txt = new System.Windows.Forms.Label();
+            this.cabangbankinfo_txt = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -252,144 +252,184 @@
             // 
             // NIPinfo_txt
             // 
-            this.NIPinfo_txt.Location = new System.Drawing.Point(126, 8);
+            this.NIPinfo_txt.AutoSize = true;
+            this.NIPinfo_txt.Location = new System.Drawing.Point(134, 11);
             this.NIPinfo_txt.Name = "NIPinfo_txt";
-            this.NIPinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.NIPinfo_txt.TabIndex = 20;
+            this.NIPinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.NIPinfo_txt.TabIndex = 40;
+            this.NIPinfo_txt.Text = "label21";
             // 
             // namapegawaiinfo_txt
             // 
-            this.namapegawaiinfo_txt.Location = new System.Drawing.Point(126, 42);
+            this.namapegawaiinfo_txt.AutoSize = true;
+            this.namapegawaiinfo_txt.Location = new System.Drawing.Point(134, 45);
             this.namapegawaiinfo_txt.Name = "namapegawaiinfo_txt";
-            this.namapegawaiinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.namapegawaiinfo_txt.TabIndex = 21;
+            this.namapegawaiinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.namapegawaiinfo_txt.TabIndex = 41;
+            this.namapegawaiinfo_txt.Text = "label22";
             // 
             // jeniskelamininfo_txt
             // 
-            this.jeniskelamininfo_txt.Location = new System.Drawing.Point(126, 76);
+            this.jeniskelamininfo_txt.AutoSize = true;
+            this.jeniskelamininfo_txt.Location = new System.Drawing.Point(134, 79);
             this.jeniskelamininfo_txt.Name = "jeniskelamininfo_txt";
-            this.jeniskelamininfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.jeniskelamininfo_txt.TabIndex = 22;
+            this.jeniskelamininfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.jeniskelamininfo_txt.TabIndex = 42;
+            this.jeniskelamininfo_txt.Text = "label23";
             // 
             // ttlinfo_txt
             // 
-            this.ttlinfo_txt.Location = new System.Drawing.Point(126, 110);
+            this.ttlinfo_txt.AutoSize = true;
+            this.ttlinfo_txt.Location = new System.Drawing.Point(134, 113);
             this.ttlinfo_txt.Name = "ttlinfo_txt";
-            this.ttlinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.ttlinfo_txt.TabIndex = 23;
+            this.ttlinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.ttlinfo_txt.TabIndex = 43;
+            this.ttlinfo_txt.Text = "label24";
             // 
             // agamainfo_txt
             // 
-            this.agamainfo_txt.Location = new System.Drawing.Point(126, 144);
+            this.agamainfo_txt.AutoSize = true;
+            this.agamainfo_txt.Location = new System.Drawing.Point(134, 147);
             this.agamainfo_txt.Name = "agamainfo_txt";
-            this.agamainfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.agamainfo_txt.TabIndex = 24;
+            this.agamainfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.agamainfo_txt.TabIndex = 44;
+            this.agamainfo_txt.Text = "label25";
             // 
             // pendidikaninfo_txt
             // 
-            this.pendidikaninfo_txt.Location = new System.Drawing.Point(126, 178);
+            this.pendidikaninfo_txt.AutoSize = true;
+            this.pendidikaninfo_txt.Location = new System.Drawing.Point(134, 181);
             this.pendidikaninfo_txt.Name = "pendidikaninfo_txt";
-            this.pendidikaninfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.pendidikaninfo_txt.TabIndex = 25;
+            this.pendidikaninfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.pendidikaninfo_txt.TabIndex = 45;
+            this.pendidikaninfo_txt.Text = "label26";
             // 
             // alamatinfo_txt
             // 
-            this.alamatinfo_txt.Location = new System.Drawing.Point(126, 212);
-            this.alamatinfo_txt.Multiline = true;
+            this.alamatinfo_txt.AutoSize = true;
+            this.alamatinfo_txt.Location = new System.Drawing.Point(134, 215);
             this.alamatinfo_txt.Name = "alamatinfo_txt";
-            this.alamatinfo_txt.Size = new System.Drawing.Size(172, 51);
-            this.alamatinfo_txt.TabIndex = 26;
+            this.alamatinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.alamatinfo_txt.TabIndex = 46;
+            this.alamatinfo_txt.Text = "label27";
             // 
             // statusalamatinfo_txt
             // 
-            this.statusalamatinfo_txt.Location = new System.Drawing.Point(126, 277);
+            this.statusalamatinfo_txt.AutoSize = true;
+            this.statusalamatinfo_txt.Location = new System.Drawing.Point(134, 280);
             this.statusalamatinfo_txt.Name = "statusalamatinfo_txt";
-            this.statusalamatinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.statusalamatinfo_txt.TabIndex = 27;
+            this.statusalamatinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.statusalamatinfo_txt.TabIndex = 47;
+            this.statusalamatinfo_txt.Text = "label28";
             // 
             // notelpinfo_txt
             // 
-            this.notelpinfo_txt.Location = new System.Drawing.Point(126, 311);
+            this.notelpinfo_txt.AutoSize = true;
+            this.notelpinfo_txt.Location = new System.Drawing.Point(134, 314);
             this.notelpinfo_txt.Name = "notelpinfo_txt";
-            this.notelpinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.notelpinfo_txt.TabIndex = 28;
+            this.notelpinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.notelpinfo_txt.TabIndex = 48;
+            this.notelpinfo_txt.Text = "label29";
             // 
             // goldarahinfo_txt
             // 
-            this.goldarahinfo_txt.Location = new System.Drawing.Point(126, 345);
+            this.goldarahinfo_txt.AutoSize = true;
+            this.goldarahinfo_txt.Location = new System.Drawing.Point(134, 348);
             this.goldarahinfo_txt.Name = "goldarahinfo_txt";
-            this.goldarahinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.goldarahinfo_txt.TabIndex = 29;
+            this.goldarahinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.goldarahinfo_txt.TabIndex = 49;
+            this.goldarahinfo_txt.Text = "label30";
             // 
             // divisiinfo_txt
             // 
-            this.divisiinfo_txt.Location = new System.Drawing.Point(428, 8);
+            this.divisiinfo_txt.AutoSize = true;
+            this.divisiinfo_txt.Location = new System.Drawing.Point(424, 11);
             this.divisiinfo_txt.Name = "divisiinfo_txt";
-            this.divisiinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.divisiinfo_txt.TabIndex = 30;
-            // 
-            // namarekinfo_txt
-            // 
-            this.namarekinfo_txt.Location = new System.Drawing.Point(428, 244);
-            this.namarekinfo_txt.Name = "namarekinfo_txt";
-            this.namarekinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.namarekinfo_txt.TabIndex = 31;
+            this.divisiinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.divisiinfo_txt.TabIndex = 50;
+            this.divisiinfo_txt.Text = "label31";
             // 
             // jabataninfo_txt
             // 
-            this.jabataninfo_txt.Location = new System.Drawing.Point(428, 42);
+            this.jabataninfo_txt.AutoSize = true;
+            this.jabataninfo_txt.Location = new System.Drawing.Point(424, 45);
             this.jabataninfo_txt.Name = "jabataninfo_txt";
-            this.jabataninfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.jabataninfo_txt.TabIndex = 32;
+            this.jabataninfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.jabataninfo_txt.TabIndex = 51;
+            this.jabataninfo_txt.Text = "label32";
+            this.jabataninfo_txt.Click += new System.EventHandler(this.label32_Click);
             // 
             // tglmasukinfo_txt
             // 
-            this.tglmasukinfo_txt.Location = new System.Drawing.Point(428, 76);
+            this.tglmasukinfo_txt.AutoSize = true;
+            this.tglmasukinfo_txt.Location = new System.Drawing.Point(424, 79);
             this.tglmasukinfo_txt.Name = "tglmasukinfo_txt";
-            this.tglmasukinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.tglmasukinfo_txt.TabIndex = 33;
+            this.tglmasukinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.tglmasukinfo_txt.TabIndex = 52;
+            this.tglmasukinfo_txt.Text = "label33";
             // 
             // noktpinfo_txt
             // 
-            this.noktpinfo_txt.Location = new System.Drawing.Point(428, 110);
+            this.noktpinfo_txt.AutoSize = true;
+            this.noktpinfo_txt.Location = new System.Drawing.Point(424, 113);
             this.noktpinfo_txt.Name = "noktpinfo_txt";
-            this.noktpinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.noktpinfo_txt.TabIndex = 34;
+            this.noktpinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.noktpinfo_txt.TabIndex = 53;
+            this.noktpinfo_txt.Text = "label34";
             // 
             // nosiminfo_txt
             // 
-            this.nosiminfo_txt.Location = new System.Drawing.Point(428, 144);
+            this.nosiminfo_txt.AutoSize = true;
+            this.nosiminfo_txt.Location = new System.Drawing.Point(424, 147);
             this.nosiminfo_txt.Name = "nosiminfo_txt";
-            this.nosiminfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.nosiminfo_txt.TabIndex = 35;
+            this.nosiminfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.nosiminfo_txt.TabIndex = 54;
+            this.nosiminfo_txt.Text = "label35";
             // 
             // npwpinfo_txt
             // 
-            this.npwpinfo_txt.Location = new System.Drawing.Point(428, 178);
+            this.npwpinfo_txt.AutoSize = true;
+            this.npwpinfo_txt.Location = new System.Drawing.Point(424, 181);
             this.npwpinfo_txt.Name = "npwpinfo_txt";
-            this.npwpinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.npwpinfo_txt.TabIndex = 36;
+            this.npwpinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.npwpinfo_txt.TabIndex = 55;
+            this.npwpinfo_txt.Text = "label36";
             // 
             // norekinfo_txt
             // 
-            this.norekinfo_txt.Location = new System.Drawing.Point(428, 212);
+            this.norekinfo_txt.AutoSize = true;
+            this.norekinfo_txt.Location = new System.Drawing.Point(424, 215);
             this.norekinfo_txt.Name = "norekinfo_txt";
-            this.norekinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.norekinfo_txt.TabIndex = 37;
+            this.norekinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.norekinfo_txt.TabIndex = 56;
+            this.norekinfo_txt.Text = "label37";
+            // 
+            // namarekinfo_txt
+            // 
+            this.namarekinfo_txt.AutoSize = true;
+            this.namarekinfo_txt.Location = new System.Drawing.Point(424, 247);
+            this.namarekinfo_txt.Name = "namarekinfo_txt";
+            this.namarekinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.namarekinfo_txt.TabIndex = 57;
+            this.namarekinfo_txt.Text = "label38";
             // 
             // namabankinfo_txt
             // 
-            this.namabankinfo_txt.Location = new System.Drawing.Point(428, 277);
+            this.namabankinfo_txt.AutoSize = true;
+            this.namabankinfo_txt.Location = new System.Drawing.Point(424, 280);
             this.namabankinfo_txt.Name = "namabankinfo_txt";
-            this.namabankinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.namabankinfo_txt.TabIndex = 38;
+            this.namabankinfo_txt.Size = new System.Drawing.Size(47, 16);
+            this.namabankinfo_txt.TabIndex = 58;
+            this.namabankinfo_txt.Text = "label39";
             // 
             // cabangbankinfo_txt
             // 
-            this.cabangbankinfo_txt.Location = new System.Drawing.Point(428, 311);
+            this.cabangbankinfo_txt.AutoSize = true;
+            this.cabangbankinfo_txt.Location = new System.Drawing.Point(424, 314);
             this.cabangbankinfo_txt.Name = "cabangbankinfo_txt";
-            this.cabangbankinfo_txt.Size = new System.Drawing.Size(172, 21);
-            this.cabangbankinfo_txt.TabIndex = 39;
+            this.cabangbankinfo_txt.Size = new System.Drawing.Size(11, 16);
+            this.cabangbankinfo_txt.TabIndex = 59;
+            this.cabangbankinfo_txt.Text = " ";
             // 
             // EmployeeInfo
             // 
@@ -397,13 +437,13 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.Controls.Add(this.cabangbankinfo_txt);
             this.Controls.Add(this.namabankinfo_txt);
+            this.Controls.Add(this.namarekinfo_txt);
             this.Controls.Add(this.norekinfo_txt);
             this.Controls.Add(this.npwpinfo_txt);
             this.Controls.Add(this.nosiminfo_txt);
             this.Controls.Add(this.noktpinfo_txt);
             this.Controls.Add(this.tglmasukinfo_txt);
             this.Controls.Add(this.jabataninfo_txt);
-            this.Controls.Add(this.namarekinfo_txt);
             this.Controls.Add(this.divisiinfo_txt);
             this.Controls.Add(this.goldarahinfo_txt);
             this.Controls.Add(this.notelpinfo_txt);
@@ -439,6 +479,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "EmployeeInfo";
             this.Size = new System.Drawing.Size(615, 380);
+            this.Load += new System.EventHandler(this.EmployeeInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -466,25 +507,25 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox NIPinfo_txt;
-        private System.Windows.Forms.TextBox namapegawaiinfo_txt;
-        private System.Windows.Forms.TextBox jeniskelamininfo_txt;
-        private System.Windows.Forms.TextBox ttlinfo_txt;
-        private System.Windows.Forms.TextBox agamainfo_txt;
-        private System.Windows.Forms.TextBox pendidikaninfo_txt;
-        private System.Windows.Forms.TextBox alamatinfo_txt;
-        private System.Windows.Forms.TextBox statusalamatinfo_txt;
-        private System.Windows.Forms.TextBox notelpinfo_txt;
-        private System.Windows.Forms.TextBox goldarahinfo_txt;
-        private System.Windows.Forms.TextBox divisiinfo_txt;
-        private System.Windows.Forms.TextBox namarekinfo_txt;
-        private System.Windows.Forms.TextBox jabataninfo_txt;
-        private System.Windows.Forms.TextBox tglmasukinfo_txt;
-        private System.Windows.Forms.TextBox noktpinfo_txt;
-        private System.Windows.Forms.TextBox nosiminfo_txt;
-        private System.Windows.Forms.TextBox npwpinfo_txt;
-        private System.Windows.Forms.TextBox norekinfo_txt;
-        private System.Windows.Forms.TextBox namabankinfo_txt;
-        private System.Windows.Forms.TextBox cabangbankinfo_txt;
+        private System.Windows.Forms.Label NIPinfo_txt;
+        private System.Windows.Forms.Label namapegawaiinfo_txt;
+        private System.Windows.Forms.Label jeniskelamininfo_txt;
+        private System.Windows.Forms.Label ttlinfo_txt;
+        private System.Windows.Forms.Label agamainfo_txt;
+        private System.Windows.Forms.Label pendidikaninfo_txt;
+        private System.Windows.Forms.Label alamatinfo_txt;
+        private System.Windows.Forms.Label statusalamatinfo_txt;
+        private System.Windows.Forms.Label notelpinfo_txt;
+        private System.Windows.Forms.Label goldarahinfo_txt;
+        private System.Windows.Forms.Label divisiinfo_txt;
+        private System.Windows.Forms.Label jabataninfo_txt;
+        private System.Windows.Forms.Label tglmasukinfo_txt;
+        private System.Windows.Forms.Label noktpinfo_txt;
+        private System.Windows.Forms.Label nosiminfo_txt;
+        private System.Windows.Forms.Label npwpinfo_txt;
+        private System.Windows.Forms.Label norekinfo_txt;
+        private System.Windows.Forms.Label namarekinfo_txt;
+        private System.Windows.Forms.Label namabankinfo_txt;
+        private System.Windows.Forms.Label cabangbankinfo_txt;
     }
 }

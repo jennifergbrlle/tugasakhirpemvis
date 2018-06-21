@@ -19,7 +19,6 @@ namespace TugasAkhirTest
             sidepanel.Top = homekaryawan_btn.Top;
             homeKaryawan1.BringToFront();
         }
-
         private void homekaryawan_btn_Click(object sender, EventArgs e)
         {
             sidepanel.Height = homekaryawan_btn.Height;
@@ -57,5 +56,11 @@ namespace TugasAkhirTest
         {
             
         }
+
+        private void MenuKaryawan_Load(object sender, EventArgs e)
+        {
+          
+        }
+        
     }
 }

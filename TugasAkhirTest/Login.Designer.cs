@@ -96,6 +96,7 @@
             // 
             this.password_txt.Location = new System.Drawing.Point(221, 219);
             this.password_txt.Name = "password_txt";
+            this.password_txt.PasswordChar = '*';
             this.password_txt.Size = new System.Drawing.Size(171, 26);
             this.password_txt.TabIndex = 4;
             this.password_txt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.password_txt_KeyDown);
@@ -163,10 +164,10 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.TextBox password_txt;
-        private System.Windows.Forms.TextBox username_txt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox username_txt;
     }
 }
 

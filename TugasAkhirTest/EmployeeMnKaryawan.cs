@@ -27,5 +27,17 @@ namespace TugasAkhirTest
         {
             employeeCuti1.BringToFront();
         }
+
+        private void employeeInfo1_Load(object sender, EventArgs e)
+        {
+
+        }
+        
+
+        private void EmployeeMnKaryawan_Load(object sender, EventArgs e)
+        {
+    
+        }
+        
     }
 }

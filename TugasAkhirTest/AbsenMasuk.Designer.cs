@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.jam = new System.Windows.Forms.Label();
             this.NIPmasuk_txt = new System.Windows.Forms.TextBox();
             this.namapegawaimasuk_txt = new System.Windows.Forms.TextBox();
             this.divisimasuk_txt = new System.Windows.Forms.TextBox();
             this.jabatanmasuk_txt = new System.Windows.Forms.TextBox();
-            this.kehadiranmasuk_txt = new System.Windows.Forms.ComboBox();
             this.simpanmasuk_btn = new System.Windows.Forms.Button();
             this.batalmasuk_btn = new System.Windows.Forms.Button();
+            this.hari = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -89,14 +91,14 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Jabatan";
             // 
-            // label6
+            // jam
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(133, 265);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 17);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Kehadiran";
+            this.jam.AutoSize = true;
+            this.jam.Location = new System.Drawing.Point(352, 265);
+            this.jam.Name = "jam";
+            this.jam.Size = new System.Drawing.Size(50, 17);
+            this.jam.TabIndex = 5;
+            this.jam.Text = "Waktu";
             // 
             // NIPmasuk_txt
             // 
@@ -126,14 +128,6 @@
             this.jabatanmasuk_txt.Size = new System.Drawing.Size(139, 23);
             this.jabatanmasuk_txt.TabIndex = 9;
             // 
-            // kehadiranmasuk_txt
-            // 
-            this.kehadiranmasuk_txt.FormattingEnabled = true;
-            this.kehadiranmasuk_txt.Location = new System.Drawing.Point(289, 262);
-            this.kehadiranmasuk_txt.Name = "kehadiranmasuk_txt";
-            this.kehadiranmasuk_txt.Size = new System.Drawing.Size(139, 25);
-            this.kehadiranmasuk_txt.TabIndex = 10;
-            // 
             // simpanmasuk_btn
             // 
             this.simpanmasuk_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -143,6 +137,7 @@
             this.simpanmasuk_btn.TabIndex = 11;
             this.simpanmasuk_btn.Text = "SIMPAN";
             this.simpanmasuk_btn.UseVisualStyleBackColor = true;
+            this.simpanmasuk_btn.Click += new System.EventHandler(this.simpanmasuk_btn_Click);
             // 
             // batalmasuk_btn
             // 
@@ -154,18 +149,32 @@
             this.batalmasuk_btn.Text = "BATAL";
             this.batalmasuk_btn.UseVisualStyleBackColor = true;
             // 
+            // hari
+            // 
+            this.hari.AutoSize = true;
+            this.hari.Location = new System.Drawing.Point(163, 265);
+            this.hari.Name = "hari";
+            this.hari.Size = new System.Drawing.Size(33, 17);
+            this.hari.TabIndex = 13;
+            this.hari.Text = "Hari";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // AbsenMasuk
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Controls.Add(this.hari);
             this.Controls.Add(this.batalmasuk_btn);
             this.Controls.Add(this.simpanmasuk_btn);
-            this.Controls.Add(this.kehadiranmasuk_txt);
             this.Controls.Add(this.jabatanmasuk_txt);
             this.Controls.Add(this.divisimasuk_txt);
             this.Controls.Add(this.namapegawaimasuk_txt);
             this.Controls.Add(this.NIPmasuk_txt);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.jam);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -175,6 +184,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "AbsenMasuk";
             this.Size = new System.Drawing.Size(615, 380);
+            this.Load += new System.EventHandler(this.AbsenMasuk_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,13 +197,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label jam;
         private System.Windows.Forms.TextBox NIPmasuk_txt;
         private System.Windows.Forms.TextBox namapegawaimasuk_txt;
         private System.Windows.Forms.TextBox divisimasuk_txt;
         private System.Windows.Forms.TextBox jabatanmasuk_txt;
-        private System.Windows.Forms.ComboBox kehadiranmasuk_txt;
         private System.Windows.Forms.Button simpanmasuk_btn;
         private System.Windows.Forms.Button batalmasuk_btn;
+        private System.Windows.Forms.Label hari;
+        private System.Windows.Forms.Timer timer1;
     }
 }
