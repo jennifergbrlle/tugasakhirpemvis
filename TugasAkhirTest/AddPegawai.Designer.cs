@@ -99,6 +99,7 @@
             this.errorProvider17 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider18 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider19 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider20 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -119,6 +120,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider20)).BeginInit();
             this.SuspendLayout();
             // 
             // bataladd_btn
@@ -128,7 +130,7 @@
             this.bataladd_btn.Location = new System.Drawing.Point(448, 331);
             this.bataladd_btn.Name = "bataladd_btn";
             this.bataladd_btn.Size = new System.Drawing.Size(75, 33);
-            this.bataladd_btn.TabIndex = 99;
+            this.bataladd_btn.TabIndex = 27;
             this.bataladd_btn.Text = "BATAL";
             this.bataladd_btn.UseVisualStyleBackColor = true;
             this.bataladd_btn.Click += new System.EventHandler(this.bataladd_btn_Click);
@@ -140,7 +142,7 @@
             this.simpanadd_btn.Location = new System.Drawing.Point(338, 331);
             this.simpanadd_btn.Name = "simpanadd_btn";
             this.simpanadd_btn.Size = new System.Drawing.Size(75, 33);
-            this.simpanadd_btn.TabIndex = 98;
+            this.simpanadd_btn.TabIndex = 26;
             this.simpanadd_btn.Text = "SIMPAN";
             this.simpanadd_btn.UseVisualStyleBackColor = true;
             this.simpanadd_btn.Click += new System.EventHandler(this.simpanadd_btn_Click);
@@ -152,7 +154,7 @@
             this.tglmasukadd_txt.Location = new System.Drawing.Point(429, 96);
             this.tglmasukadd_txt.Name = "tglmasukadd_txt";
             this.tglmasukadd_txt.Size = new System.Drawing.Size(166, 21);
-            this.tglmasukadd_txt.TabIndex = 97;
+            this.tglmasukadd_txt.TabIndex = 18;
             // 
             // tgllahiradd_date
             // 
@@ -161,7 +163,7 @@
             this.tgllahiradd_date.Location = new System.Drawing.Point(119, 121);
             this.tgllahiradd_date.Name = "tgllahiradd_date";
             this.tgllahiradd_date.Size = new System.Drawing.Size(166, 21);
-            this.tgllahiradd_date.TabIndex = 96;
+            this.tgllahiradd_date.TabIndex = 6;
             // 
             // jabatanadd_txt
             // 
@@ -170,7 +172,7 @@
             this.jabatanadd_txt.Location = new System.Drawing.Point(429, 68);
             this.jabatanadd_txt.Name = "jabatanadd_txt";
             this.jabatanadd_txt.Size = new System.Drawing.Size(166, 24);
-            this.jabatanadd_txt.TabIndex = 95;
+            this.jabatanadd_txt.TabIndex = 17;
             this.jabatanadd_txt.Text = "Pilih Jabatan";
             this.jabatanadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.jabatanadd_txt_Validating);
             // 
@@ -181,7 +183,7 @@
             this.divisiadd_txt.Location = new System.Drawing.Point(429, 40);
             this.divisiadd_txt.Name = "divisiadd_txt";
             this.divisiadd_txt.Size = new System.Drawing.Size(166, 24);
-            this.divisiadd_txt.TabIndex = 94;
+            this.divisiadd_txt.TabIndex = 16;
             this.divisiadd_txt.Text = "Pilih Divisi";
             this.divisiadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.divisiadd_txt_Validating);
             // 
@@ -197,7 +199,7 @@
             this.statusalamatadd_txt.Location = new System.Drawing.Point(119, 281);
             this.statusalamatadd_txt.Name = "statusalamatadd_txt";
             this.statusalamatadd_txt.Size = new System.Drawing.Size(166, 24);
-            this.statusalamatadd_txt.TabIndex = 93;
+            this.statusalamatadd_txt.TabIndex = 10;
             this.statusalamatadd_txt.Text = "Pilih Status Alamat";
             this.statusalamatadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.statusalamatadd_txt_Validating);
             // 
@@ -215,7 +217,7 @@
             this.agamaadd_txt.Location = new System.Drawing.Point(119, 147);
             this.agamaadd_txt.Name = "agamaadd_txt";
             this.agamaadd_txt.Size = new System.Drawing.Size(166, 24);
-            this.agamaadd_txt.TabIndex = 92;
+            this.agamaadd_txt.TabIndex = 7;
             this.agamaadd_txt.Text = "Pilih Agama";
             this.agamaadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.agamaadd_txt_Validating);
             // 
@@ -225,7 +227,7 @@
             this.cabangbankadd_txt.Location = new System.Drawing.Point(429, 284);
             this.cabangbankadd_txt.Name = "cabangbankadd_txt";
             this.cabangbankadd_txt.Size = new System.Drawing.Size(166, 21);
-            this.cabangbankadd_txt.TabIndex = 85;
+            this.cabangbankadd_txt.TabIndex = 25;
             this.cabangbankadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.cabangbankadd_txt_Validating);
             // 
             // norekadd_txt
@@ -234,7 +236,7 @@
             this.norekadd_txt.Location = new System.Drawing.Point(429, 203);
             this.norekadd_txt.Name = "norekadd_txt";
             this.norekadd_txt.Size = new System.Drawing.Size(166, 21);
-            this.norekadd_txt.TabIndex = 83;
+            this.norekadd_txt.TabIndex = 22;
             this.norekadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.norekadd_txt_Validating);
             // 
             // npwpadd_txt
@@ -243,7 +245,7 @@
             this.npwpadd_txt.Location = new System.Drawing.Point(429, 176);
             this.npwpadd_txt.Name = "npwpadd_txt";
             this.npwpadd_txt.Size = new System.Drawing.Size(166, 21);
-            this.npwpadd_txt.TabIndex = 82;
+            this.npwpadd_txt.TabIndex = 21;
             this.npwpadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.npwpadd_txt_Validating);
             // 
             // namarekadd_txt
@@ -252,7 +254,8 @@
             this.namarekadd_txt.Location = new System.Drawing.Point(429, 230);
             this.namarekadd_txt.Name = "namarekadd_txt";
             this.namarekadd_txt.Size = new System.Drawing.Size(166, 21);
-            this.namarekadd_txt.TabIndex = 81;
+            this.namarekadd_txt.TabIndex = 23;
+            this.namarekadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.namarekadd_txt_Validating);
             // 
             // nosimadd_txt
             // 
@@ -260,7 +263,7 @@
             this.nosimadd_txt.Location = new System.Drawing.Point(429, 149);
             this.nosimadd_txt.Name = "nosimadd_txt";
             this.nosimadd_txt.Size = new System.Drawing.Size(166, 21);
-            this.nosimadd_txt.TabIndex = 80;
+            this.nosimadd_txt.TabIndex = 20;
             this.nosimadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.nosimadd_txt_Validating);
             // 
             // noktpadd_txt
@@ -269,7 +272,7 @@
             this.noktpadd_txt.Location = new System.Drawing.Point(429, 122);
             this.noktpadd_txt.Name = "noktpadd_txt";
             this.noktpadd_txt.Size = new System.Drawing.Size(166, 21);
-            this.noktpadd_txt.TabIndex = 79;
+            this.noktpadd_txt.TabIndex = 19;
             this.noktpadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.noktpadd_txt_Validating);
             // 
             // notelpadd_txt
@@ -278,7 +281,7 @@
             this.notelpadd_txt.Location = new System.Drawing.Point(119, 311);
             this.notelpadd_txt.Name = "notelpadd_txt";
             this.notelpadd_txt.Size = new System.Drawing.Size(166, 21);
-            this.notelpadd_txt.TabIndex = 77;
+            this.notelpadd_txt.TabIndex = 11;
             this.notelpadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.notelpadd_txt_Validating);
             // 
             // alamatadd_txt
@@ -288,7 +291,7 @@
             this.alamatadd_txt.Multiline = true;
             this.alamatadd_txt.Name = "alamatadd_txt";
             this.alamatadd_txt.Size = new System.Drawing.Size(166, 72);
-            this.alamatadd_txt.TabIndex = 76;
+            this.alamatadd_txt.TabIndex = 9;
             this.alamatadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.alamatadd_txt_Validating);
             // 
             // namabelakangadd_txt
@@ -297,7 +300,7 @@
             this.namabelakangadd_txt.Location = new System.Drawing.Point(119, 41);
             this.namabelakangadd_txt.Name = "namabelakangadd_txt";
             this.namabelakangadd_txt.Size = new System.Drawing.Size(166, 21);
-            this.namabelakangadd_txt.TabIndex = 73;
+            this.namabelakangadd_txt.TabIndex = 2;
             this.namabelakangadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.namabelakangadd_txt_Validating);
             // 
             // namadepanadd_txt
@@ -306,7 +309,7 @@
             this.namadepanadd_txt.Location = new System.Drawing.Point(119, 14);
             this.namadepanadd_txt.Name = "namadepanadd_txt";
             this.namadepanadd_txt.Size = new System.Drawing.Size(166, 21);
-            this.namadepanadd_txt.TabIndex = 72;
+            this.namadepanadd_txt.TabIndex = 1;
             this.namadepanadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.namadepanadd_txt_Validating);
             // 
             // label22
@@ -541,7 +544,7 @@
             this.namabankadd_txt.Location = new System.Drawing.Point(429, 257);
             this.namabankadd_txt.Name = "namabankadd_txt";
             this.namabankadd_txt.Size = new System.Drawing.Size(166, 24);
-            this.namabankadd_txt.TabIndex = 100;
+            this.namabankadd_txt.TabIndex = 24;
             this.namabankadd_txt.Text = "Pilih Nama Bank";
             this.namabankadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.namabankadd_txt_Validating);
             // 
@@ -552,7 +555,7 @@
             this.perempuanadd_btn.Location = new System.Drawing.Point(196, 66);
             this.perempuanadd_btn.Name = "perempuanadd_btn";
             this.perempuanadd_btn.Size = new System.Drawing.Size(90, 20);
-            this.perempuanadd_btn.TabIndex = 103;
+            this.perempuanadd_btn.TabIndex = 4;
             this.perempuanadd_btn.TabStop = true;
             this.perempuanadd_btn.Text = "Perempuan";
             this.perempuanadd_btn.UseVisualStyleBackColor = true;
@@ -573,7 +576,7 @@
             this.pendidikanadd_txt.Location = new System.Drawing.Point(119, 174);
             this.pendidikanadd_txt.Name = "pendidikanadd_txt";
             this.pendidikanadd_txt.Size = new System.Drawing.Size(166, 24);
-            this.pendidikanadd_txt.TabIndex = 104;
+            this.pendidikanadd_txt.TabIndex = 8;
             this.pendidikanadd_txt.Text = "Pilih Pendidikan";
             this.pendidikanadd_txt.Validating += new System.ComponentModel.CancelEventHandler(this.pendidikanadd_txt_Validating);
             // 
@@ -598,7 +601,7 @@
             this.tempatlahiradd_btn.Location = new System.Drawing.Point(119, 92);
             this.tempatlahiradd_btn.Name = "tempatlahiradd_btn";
             this.tempatlahiradd_btn.Size = new System.Drawing.Size(166, 24);
-            this.tempatlahiradd_btn.TabIndex = 105;
+            this.tempatlahiradd_btn.TabIndex = 5;
             this.tempatlahiradd_btn.Text = "Pilih Kota";
             this.tempatlahiradd_btn.Validating += new System.ComponentModel.CancelEventHandler(this.tempatlahiradd_btn_Validating);
             // 
@@ -609,7 +612,7 @@
             this.golABadd_btn.Location = new System.Drawing.Point(123, 11);
             this.golABadd_btn.Name = "golABadd_btn";
             this.golABadd_btn.Size = new System.Drawing.Size(39, 20);
-            this.golABadd_btn.TabIndex = 91;
+            this.golABadd_btn.TabIndex = 15;
             this.golABadd_btn.TabStop = true;
             this.golABadd_btn.Text = "AB";
             this.golABadd_btn.UseVisualStyleBackColor = true;
@@ -622,7 +625,7 @@
             this.golOadd_btn.Location = new System.Drawing.Point(81, 11);
             this.golOadd_btn.Name = "golOadd_btn";
             this.golOadd_btn.Size = new System.Drawing.Size(36, 20);
-            this.golOadd_btn.TabIndex = 89;
+            this.golOadd_btn.TabIndex = 14;
             this.golOadd_btn.TabStop = true;
             this.golOadd_btn.Text = "O";
             this.golOadd_btn.UseVisualStyleBackColor = true;
@@ -634,7 +637,7 @@
             this.golBadd_btn.Location = new System.Drawing.Point(43, 11);
             this.golBadd_btn.Name = "golBadd_btn";
             this.golBadd_btn.Size = new System.Drawing.Size(32, 20);
-            this.golBadd_btn.TabIndex = 90;
+            this.golBadd_btn.TabIndex = 13;
             this.golBadd_btn.TabStop = true;
             this.golBadd_btn.Text = "B";
             this.golBadd_btn.UseVisualStyleBackColor = true;
@@ -646,7 +649,7 @@
             this.golAadd_btn.Location = new System.Drawing.Point(4, 11);
             this.golAadd_btn.Name = "golAadd_btn";
             this.golAadd_btn.Size = new System.Drawing.Size(33, 20);
-            this.golAadd_btn.TabIndex = 88;
+            this.golAadd_btn.TabIndex = 12;
             this.golAadd_btn.TabStop = true;
             this.golAadd_btn.Text = "A";
             this.golAadd_btn.UseVisualStyleBackColor = true;
@@ -686,7 +689,7 @@
             this.lakilakiadd_btn.Location = new System.Drawing.Point(120, 67);
             this.lakilakiadd_btn.Name = "lakilakiadd_btn";
             this.lakilakiadd_btn.Size = new System.Drawing.Size(70, 20);
-            this.lakilakiadd_btn.TabIndex = 86;
+            this.lakilakiadd_btn.TabIndex = 3;
             this.lakilakiadd_btn.TabStop = true;
             this.lakilakiadd_btn.Text = "Laki-Laki";
             this.lakilakiadd_btn.UseVisualStyleBackColor = true;
@@ -750,6 +753,10 @@
             // errorProvider19
             // 
             this.errorProvider19.ContainerControl = this;
+            // 
+            // errorProvider20
+            // 
+            this.errorProvider20.ContainerControl = this;
             // 
             // AddPegawai
             // 
@@ -828,6 +835,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider20)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -905,5 +913,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider17;
         private System.Windows.Forms.ErrorProvider errorProvider18;
         private System.Windows.Forms.ErrorProvider errorProvider19;
+        private System.Windows.Forms.ErrorProvider errorProvider20;
     }
 }
