@@ -23,7 +23,7 @@ namespace TugasAkhirTest
         {
             Application.Exit();
         }
-
+        public static String username;
         private void login_btn_Click(object sender, EventArgs e)
         {
             con.Open();

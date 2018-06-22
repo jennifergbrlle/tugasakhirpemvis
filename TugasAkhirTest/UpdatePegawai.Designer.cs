@@ -102,6 +102,10 @@
             this.errorProvider18 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider19 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider20 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider21 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider22 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cbxUserLevelUpdate = new System.Windows.Forms.ComboBox();
+            this.tipeusertxt = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -123,15 +127,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider22)).BeginInit();
             this.SuspendLayout();
             // 
             // batalupdate_btn
             // 
             this.batalupdate_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.batalupdate_btn.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.batalupdate_btn.Location = new System.Drawing.Point(448, 331);
+            this.batalupdate_btn.Location = new System.Drawing.Point(445, 343);
             this.batalupdate_btn.Name = "batalupdate_btn";
-            this.batalupdate_btn.Size = new System.Drawing.Size(75, 33);
+            this.batalupdate_btn.Size = new System.Drawing.Size(75, 29);
             this.batalupdate_btn.TabIndex = 28;
             this.batalupdate_btn.Text = "BATAL";
             this.batalupdate_btn.UseVisualStyleBackColor = true;
@@ -141,9 +147,9 @@
             // 
             this.update_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.update_btn.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_btn.Location = new System.Drawing.Point(338, 331);
+            this.update_btn.Location = new System.Drawing.Point(335, 343);
             this.update_btn.Name = "update_btn";
-            this.update_btn.Size = new System.Drawing.Size(75, 33);
+            this.update_btn.Size = new System.Drawing.Size(75, 29);
             this.update_btn.TabIndex = 27;
             this.update_btn.Text = "UPDATE";
             this.update_btn.UseVisualStyleBackColor = true;
@@ -151,8 +157,9 @@
             // 
             // tglmasukupdate_txt
             // 
+            this.tglmasukupdate_txt.CustomFormat = "yyyy-MM-dd";
             this.tglmasukupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tglmasukupdate_txt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.tglmasukupdate_txt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.tglmasukupdate_txt.Location = new System.Drawing.Point(428, 96);
             this.tglmasukupdate_txt.Name = "tglmasukupdate_txt";
             this.tglmasukupdate_txt.Size = new System.Drawing.Size(166, 21);
@@ -160,8 +167,9 @@
             // 
             // tgllahirupdate_txt
             // 
+            this.tgllahirupdate_txt.CustomFormat = "yyyy-MM-dd";
             this.tgllahirupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tgllahirupdate_txt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.tgllahirupdate_txt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.tgllahirupdate_txt.Location = new System.Drawing.Point(119, 121);
             this.tgllahirupdate_txt.Name = "tgllahirupdate_txt";
             this.tgllahirupdate_txt.Size = new System.Drawing.Size(166, 21);
@@ -227,7 +235,7 @@
             // 
             this.golABupdate_btn.AutoSize = true;
             this.golABupdate_btn.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.golABupdate_btn.Location = new System.Drawing.Point(118, 8);
+            this.golABupdate_btn.Location = new System.Drawing.Point(118, 10);
             this.golABupdate_btn.Name = "golABupdate_btn";
             this.golABupdate_btn.Size = new System.Drawing.Size(39, 20);
             this.golABupdate_btn.TabIndex = 14;
@@ -240,7 +248,7 @@
             // 
             this.golBupdate_btn.AutoSize = true;
             this.golBupdate_btn.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.golBupdate_btn.Location = new System.Drawing.Point(44, 8);
+            this.golBupdate_btn.Location = new System.Drawing.Point(44, 10);
             this.golBupdate_btn.Name = "golBupdate_btn";
             this.golBupdate_btn.Size = new System.Drawing.Size(32, 20);
             this.golBupdate_btn.TabIndex = 12;
@@ -252,7 +260,7 @@
             // 
             this.golOupdate_btn.AutoSize = true;
             this.golOupdate_btn.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.golOupdate_btn.Location = new System.Drawing.Point(76, 8);
+            this.golOupdate_btn.Location = new System.Drawing.Point(76, 10);
             this.golOupdate_btn.Name = "golOupdate_btn";
             this.golOupdate_btn.Size = new System.Drawing.Size(36, 20);
             this.golOupdate_btn.TabIndex = 13;
@@ -264,7 +272,7 @@
             // 
             this.golAupdate_btn.AutoSize = true;
             this.golAupdate_btn.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.golAupdate_btn.Location = new System.Drawing.Point(5, 8);
+            this.golAupdate_btn.Location = new System.Drawing.Point(5, 10);
             this.golAupdate_btn.Name = "golAupdate_btn";
             this.golAupdate_btn.Size = new System.Drawing.Size(33, 20);
             this.golAupdate_btn.TabIndex = 11;
@@ -300,7 +308,7 @@
             // cabangbankupdate_txt
             // 
             this.cabangbankupdate_txt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cabangbankupdate_txt.Location = new System.Drawing.Point(428, 284);
+            this.cabangbankupdate_txt.Location = new System.Drawing.Point(428, 285);
             this.cabangbankupdate_txt.Name = "cabangbankupdate_txt";
             this.cabangbankupdate_txt.Size = new System.Drawing.Size(166, 21);
             this.cabangbankupdate_txt.TabIndex = 26;
@@ -771,10 +779,44 @@
             // 
             this.errorProvider20.ContainerControl = this;
             // 
+            // errorProvider21
+            // 
+            this.errorProvider21.ContainerControl = this;
+            // 
+            // errorProvider22
+            // 
+            this.errorProvider22.ContainerControl = this;
+            // 
+            // cbxUserLevelUpdate
+            // 
+            this.cbxUserLevelUpdate.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxUserLevelUpdate.FormattingEnabled = true;
+            this.cbxUserLevelUpdate.Items.AddRange(new object[] {
+            "admin",
+            "pegawai"});
+            this.cbxUserLevelUpdate.Location = new System.Drawing.Point(428, 311);
+            this.cbxUserLevelUpdate.Name = "cbxUserLevelUpdate";
+            this.cbxUserLevelUpdate.Size = new System.Drawing.Size(166, 24);
+            this.cbxUserLevelUpdate.TabIndex = 155;
+            this.cbxUserLevelUpdate.Text = "Pilih Jenis User";
+            this.cbxUserLevelUpdate.Validating += new System.ComponentModel.CancelEventHandler(this.cbxUserLevel_Validating);
+            // 
+            // tipeusertxt
+            // 
+            this.tipeusertxt.AutoSize = true;
+            this.tipeusertxt.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipeusertxt.Location = new System.Drawing.Point(308, 314);
+            this.tipeusertxt.Name = "tipeusertxt";
+            this.tipeusertxt.Size = new System.Drawing.Size(58, 16);
+            this.tipeusertxt.TabIndex = 154;
+            this.tipeusertxt.Text = "Jenis User";
+            // 
             // UpdatePegawai
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Controls.Add(this.cbxUserLevelUpdate);
+            this.Controls.Add(this.tipeusertxt);
             this.Controls.Add(this.namabankupdate_txt);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pendidikanupdate_txt);
@@ -849,6 +891,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider22)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -928,5 +972,9 @@
         private System.Windows.Forms.ErrorProvider errorProvider18;
         private System.Windows.Forms.ErrorProvider errorProvider19;
         private System.Windows.Forms.ErrorProvider errorProvider20;
+        private System.Windows.Forms.ErrorProvider errorProvider21;
+        private System.Windows.Forms.ErrorProvider errorProvider22;
+        private System.Windows.Forms.ComboBox cbxUserLevelUpdate;
+        private System.Windows.Forms.Label tipeusertxt;
     }
 }

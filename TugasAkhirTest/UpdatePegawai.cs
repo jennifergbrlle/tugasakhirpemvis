@@ -22,7 +22,7 @@ namespace TugasAkhirTest
             tanggallahir, agama, pendidikan, alamat, statusalamat, notelp, goldarah,
             divisi, jabatan, tanggalmasuk, noktp, nosim, npwp, norek, namarek, namabank, cabangbank;
         private String NIPupdate;
-        Regex isAllLetters = new Regex(@"^[a-zA-Z]+$");
+        Regex isAllLetters = new Regex(@"^[a-zA-Z ]+$");
         Regex isAlphaNumeric = new Regex(@"^[a-zA-Z0-9/. -]+$");
         Regex isAllNumbers = new Regex(@"^\d+$");
         private String koneksi;
@@ -55,6 +55,7 @@ namespace TugasAkhirTest
             namarekupdate_txt.Text = null;
             namabankupdate_txt.SelectedIndex = -1;
             cabangbankupdate_txt.Text = null;
+            cbxUserLevelUpdate.SelectedIndex = -1;
         }
         private void NIPsearch_btn_Click(object sender, EventArgs e)
         {
@@ -70,7 +71,7 @@ namespace TugasAkhirTest
             {
                 MySqlCommand cmd2 = new MySqlCommand();
                 cmd2.CommandType = CommandType.Text;
-                cmd2.CommandText = "select * from pegawai where NIP = '" + NIPupdate + "'";
+                cmd2.CommandText = "select * from pegawai,user where pegawai.NIP = user.username and pegawai.NIP = '" + NIPupdate + "'";
                 cmd2.Connection = con;
                 MySqlDataReader dr = cmd2.ExecuteReader();
 
@@ -95,6 +96,8 @@ namespace TugasAkhirTest
                     }
                     String tempatlahir = (dr["TempatLahir"].ToString());
                     tempatlahirupdate_btn.SelectedIndex = tempatlahirupdate_btn.FindStringExact(tempatlahir);
+                    String tanggalahir = (dr["TanggalLahir"].ToString());
+                    tgllahirupdate_txt.Value = DateTime.Parse(tanggalahir);
                     String agama = (dr["Agama"].ToString());
                     agamaupdate_txt.SelectedIndex = agamaupdate_txt.FindStringExact(agama);
                     String pendidikan = (dr["Pendidikan"].ToString());
@@ -139,6 +142,8 @@ namespace TugasAkhirTest
                     String namabank = (dr["NamaBank"].ToString());
                     namabankupdate_txt.SelectedIndex = namabankupdate_txt.FindStringExact(namabank);
                     cabangbankupdate_txt.Text = (dr["CabangBank"].ToString());
+                    String leveluser = (dr["level"].ToString());
+                    cbxUserLevelUpdate.SelectedIndex = cbxUserLevelUpdate.FindStringExact(leveluser);
                 }
             }
             else
@@ -240,6 +245,20 @@ namespace TugasAkhirTest
         private void batalupdate_btn_Click(object sender, EventArgs e)
         {
             clearForm();
+        }
+
+        private void cbxUserLevel_Validating(object sender, CancelEventArgs e)
+        {
+            if (cbxUserLevelUpdate.SelectedIndex == -1)
+            {
+                errorProvider21.SetError(cbxUserLevelUpdate, "Pilih Level User");
+                update_btn.Enabled = false;
+            }
+            else
+            {
+                errorProvider21.SetError(cbxUserLevelUpdate, null);
+                update_btn.Enabled = true;
+            }
         }
 
         private void namablkgupdate_txt_Validating(object sender, CancelEventArgs e)
@@ -569,7 +588,7 @@ namespace TugasAkhirTest
                     jeniskelamin = perempuanupdate_btn.Text;
                 }
                 tempatlahir = tempatlahirupdate_btn.Text;
-                tanggallahir = tglmasukupdate_txt.Value.ToString("dd-mm-yyyy");
+                tanggallahir = tgllahirupdate_txt.Value.ToString("yyyy-MM-dd");
                 agama = agamaupdate_txt.Text;
                 pendidikan = pendidikanupdate_txt.Text;
                 alamat = alamatupdate_txt.Text;
@@ -594,7 +613,7 @@ namespace TugasAkhirTest
                 }
                 divisi = divisiupdate_txt.Text;
                 jabatan = jabatanupdate_txt.Text;
-                tanggalmasuk = tglmasukupdate_txt.Value.ToString("dd-mm-yyyy");
+                tanggalmasuk = tglmasukupdate_txt.Value.ToString("yyyy-MM-dd");
                 noktp = noktpupdate_txt.Text;
                 nosim = nosimupdate_txt.Text;
                 npwp = npwpupdate_txt.Text;

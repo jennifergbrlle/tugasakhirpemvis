@@ -19,15 +19,16 @@ namespace TugasAkhirTest
             InitializeComponent();
         }
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
-        Regex isAllLetters = new Regex(@"^[a-zA-Z]+$");
+        Regex isAllLetters = new Regex(@"^[a-zA-Z ]+$");
         Regex isAlphaNumeric = new Regex(@"^[a-zA-Z0-9/. -]+$");
         Regex isAllNumbers = new Regex(@"^\d+$");
         String namadepan, namabelakang, jeniskelamin, tempatlahir,
             tanggallahir, agama, pendidikan, alamat, statusalamat, notelp, goldarah,
-            divisi, jabatan, tanggalmasuk, noktp, nosim, npwp, norek, namarek, namabank, cabangbank;
+            divisi, jabatan, tanggalmasuk, noktp, nosim, npwp, norek, namarek, namabank, cabangbank, password, userlevel;
         private String koneksi;
         MySqlConnection konek;
         MySqlCommand sqlquery;
+        MySqlCommand sqlquery2;
 
         private void connect_mysql()
         {
@@ -64,6 +65,7 @@ namespace TugasAkhirTest
             {
                 nipadd_txt.Text = nip.ToString();
             }
+            con.Close();
         }
         private void clearForm()
         {
@@ -90,6 +92,7 @@ namespace TugasAkhirTest
             namarekadd_txt.Text = null;
             namabankadd_txt.SelectedIndex = -1;
             cabangbankadd_txt.Text = null;
+            cbxUserLevel.SelectedIndex = -1;
         }
         private void noktpadd_txt_Validating(object sender, CancelEventArgs e)
         {
@@ -144,6 +147,20 @@ namespace TugasAkhirTest
             else
             {
                 errorProvider15.SetError(npwpadd_txt, null);
+                simpanadd_btn.Enabled = true;
+            }
+        }
+
+        private void cbxUserLevel_Validating(object sender, CancelEventArgs e)
+        {
+            if (cbxUserLevel.SelectedIndex == -1)
+            {
+                errorProvider21.SetError(cbxUserLevel, "Pilih Level User");
+                simpanadd_btn.Enabled = false;
+            }
+            else
+            {
+                errorProvider21.SetError(cbxUserLevel, null);
                 simpanadd_btn.Enabled = true;
             }
         }
@@ -231,9 +248,9 @@ namespace TugasAkhirTest
                 errorProvider20.SetError(namarekadd_txt, "Silahkan Masukkan Nomor Rekening");
                 simpanadd_btn.Enabled = false;
             }
-            else if (namarekadd_txt.Text.Length < 3 || namarekadd_txt.Text.Length > 40 || !isAllLetters.IsMatch(notelpadd_txt.Text))
+            else if (namarekadd_txt.Text.Length < 3 || namarekadd_txt.Text.Length > 40 || !isAllLetters.IsMatch(namarekadd_txt.Text))
             {
-                errorProvider20.SetError(namarekadd_txt, "Hanya Huruf, Minimal 6 Karakter, Maksimal 13 Karakter");
+                errorProvider20.SetError(namarekadd_txt, "Hanya Huruf, Minimal 3 Karakter, Maksimal 40 Karakter");
                 simpanadd_btn.Enabled = false;
             }
             else
@@ -498,7 +515,7 @@ namespace TugasAkhirTest
                     jeniskelamin = perempuanadd_btn.Text;
                 }
                 tempatlahir = tempatlahiradd_btn.Text;
-                tanggallahir = tgllahiradd_date.Value.ToString("dd-mm-yyyy");
+                tanggallahir = tgllahiradd_date.Value.ToString("yyyy-MM-dd");
                 agama = agamaadd_txt.Text;
                 pendidikan = pendidikanadd_txt.Text;
                 alamat = alamatadd_txt.Text;
@@ -523,7 +540,7 @@ namespace TugasAkhirTest
                 }
                 divisi = divisiadd_txt.Text;
                 jabatan = jabatanadd_txt.Text;
-                tanggalmasuk = tglmasukadd_txt.Value.ToString("dd-mm-yyyy");
+                tanggalmasuk = tglmasukadd_txt.Value.ToString("yyyy-MM-dd");
                 noktp = noktpadd_txt.Text;
                 nosim = nosimadd_txt.Text;
                 npwp = npwpadd_txt.Text;
@@ -531,6 +548,8 @@ namespace TugasAkhirTest
                 namarek = namarekadd_txt.Text;
                 namabank = namabankadd_txt.Text;
                 cabangbank = cabangbankadd_txt.Text;
+                password = namabelakang + nip;
+                userlevel = cbxUserLevel.Text;
 
                 connect_mysql();
                 try
@@ -539,6 +558,9 @@ namespace TugasAkhirTest
                     sqlquery.CommandText = "INSERT INTO pegawai(NamaDepan, NamaBelakang, JenisKelamin, TempatLahir, TanggalLahir, Alamat, Status_alamat, Agama, NoTelp, Pendidikan, GolDarah, NIP, TglMasuk, NoKTP, NoSIM, No_NPWP, KodeDiv, KodeJabat, NoRek, NamaRek, NamaBank, CabangBank)" +
                         "VALUES('" + namadepan + "','" + namabelakang + "','" + jeniskelamin + "','" + tempatlahir + "','" + tanggallahir + "','" + alamat + "','" + statusalamat + "','" + agama + "','" + notelp + "','" + pendidikan + "','" + goldarah + "','" + nip + "','" + tanggalmasuk + "','" + noktp + "','" + nosim + "','" + npwp + "','" + divisi + "','" + jabatan + "','" + norek + "','"+namarek+"','" + namabank + "','" + cabangbank + "')";
                     sqlquery.ExecuteNonQuery();
+                    sqlquery2 = konek.CreateCommand();
+                    sqlquery2.CommandText = "INSERT INTO user(username, password, level) VALUES('" + nip + "','" + password + "','" + userlevel + "')";
+                    sqlquery2.ExecuteNonQuery();
                     MessageBox.Show("Data Berhasil isimpan");
                     konek.Close();
                     clearForm();

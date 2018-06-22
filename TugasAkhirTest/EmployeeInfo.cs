@@ -14,6 +14,7 @@ namespace TugasAkhirTest
     public partial class EmployeeInfo : UserControl
     {
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
+        
         public EmployeeInfo()
         {
             InitializeComponent();
@@ -55,7 +56,8 @@ namespace TugasAkhirTest
 
         private void EmployeeInfo_Load(object sender, EventArgs e)
         {
-            
+            /*String hasilkiriman = Login.username;
+            MessageBox.Show(hasilkiriman);*/
         }
 
         private void label32_Click(object sender, EventArgs e)
