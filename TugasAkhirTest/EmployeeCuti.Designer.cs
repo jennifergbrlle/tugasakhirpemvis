@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeCuti));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             this.keterangancuti_txt = new System.Windows.Forms.TextBox();
             this.ajukancuti_txt = new System.Windows.Forms.Button();
             this.batalcuti_txt = new System.Windows.Forms.Button();
+            this.search_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -124,7 +126,7 @@
             // 
             this.NIIPcuti_txt.Location = new System.Drawing.Point(131, 96);
             this.NIIPcuti_txt.Name = "NIIPcuti_txt";
-            this.NIIPcuti_txt.Size = new System.Drawing.Size(157, 22);
+            this.NIIPcuti_txt.Size = new System.Drawing.Size(132, 22);
             this.NIIPcuti_txt.TabIndex = 9;
             // 
             // namapegawaicuti_txt
@@ -197,10 +199,23 @@
             this.batalcuti_txt.Text = "BATAL";
             this.batalcuti_txt.UseVisualStyleBackColor = true;
             // 
+            // search_btn
+            // 
+            this.search_btn.FlatAppearance.BorderSize = 0;
+            this.search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_btn.Image = ((System.Drawing.Image)(resources.GetObject("search_btn.Image")));
+            this.search_btn.Location = new System.Drawing.Point(263, 95);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(25, 25);
+            this.search_btn.TabIndex = 18;
+            this.search_btn.UseVisualStyleBackColor = true;
+            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
+            // 
             // EmployeeCuti
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Controls.Add(this.search_btn);
             this.Controls.Add(this.batalcuti_txt);
             this.Controls.Add(this.ajukancuti_txt);
             this.Controls.Add(this.keterangancuti_txt);
@@ -247,5 +262,6 @@
         private System.Windows.Forms.TextBox keterangancuti_txt;
         private System.Windows.Forms.Button ajukancuti_txt;
         private System.Windows.Forms.Button batalcuti_txt;
+        private System.Windows.Forms.Button search_btn;
     }
 }

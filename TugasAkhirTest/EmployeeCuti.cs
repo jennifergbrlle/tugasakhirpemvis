@@ -21,20 +21,6 @@ namespace TugasAkhirTest
 
         private void EmployeeCuti_Load(object sender, EventArgs e)
         {
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select nip, namapegawai, namadiv, namajabat, username from employeeinfo, user where user.username like employeeinfo.nip";
-            cmd.Connection = con;
-            MySqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
-            {
-                NIIPcuti_txt.Text = dr["NIP"].ToString();
-                namapegawaicuti_txt.Text = dr["NamaPegawai"].ToString();
-                divisicuti_txt.Text = dr["NamaDiv"].ToString();
-                jabatancuti_txt.Text = dr["NamaJabat"].ToString();
-            }
-            con.Close();
         }
 
         private void ajukancuti_txt_Click(object sender, EventArgs e)
@@ -54,6 +40,38 @@ namespace TugasAkhirTest
             {
                 MessageBox.Show("Cuti gagal diajukan");
             }
+            con.Close();
+        }
+
+        private void search_btn_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select nip from employeeinfo where nip='" + NIIPcuti_txt.Text + "'";
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            if(dt.Rows.Count == 1)
+            {
+                MySqlCommand cmd2 = new MySqlCommand();
+                cmd2.CommandType = CommandType.Text;
+                cmd2.CommandText = "select nip, namapegawai, namadiv, namajabat from employeeinfo where nip = '" + NIIPcuti_txt.Text + "'";
+                cmd2.Connection = con;
+                MySqlDataReader dr = cmd2.ExecuteReader();
+                while (dr.Read())
+                {
+                    NIIPcuti_txt.Text = dr["NIP"].ToString();
+                    namapegawaicuti_txt.Text = dr["NamaPegawai"].ToString();
+                    divisicuti_txt.Text = dr["NamaDiv"].ToString();
+                    jabatancuti_txt.Text = dr["NamaJabat"].ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Data tidak ditemukan");
+            }
+
             con.Close();
         }
     }

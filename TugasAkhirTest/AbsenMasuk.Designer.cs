@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AbsenMasuk));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@
             this.batalmasuk_btn = new System.Windows.Forms.Button();
             this.hari = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.search_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -163,10 +165,23 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // search_btn
+            // 
+            this.search_btn.FlatAppearance.BorderSize = 0;
+            this.search_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_btn.Image = ((System.Drawing.Image)(resources.GetObject("search_btn.Image")));
+            this.search_btn.Location = new System.Drawing.Point(425, 89);
+            this.search_btn.Name = "search_btn";
+            this.search_btn.Size = new System.Drawing.Size(25, 25);
+            this.search_btn.TabIndex = 14;
+            this.search_btn.UseVisualStyleBackColor = true;
+            this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
+            // 
             // AbsenMasuk
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Controls.Add(this.search_btn);
             this.Controls.Add(this.hari);
             this.Controls.Add(this.batalmasuk_btn);
             this.Controls.Add(this.simpanmasuk_btn);
@@ -206,5 +221,6 @@
         private System.Windows.Forms.Button batalmasuk_btn;
         private System.Windows.Forms.Label hari;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button search_btn;
     }
 }

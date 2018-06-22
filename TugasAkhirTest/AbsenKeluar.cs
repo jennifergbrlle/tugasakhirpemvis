@@ -21,17 +21,7 @@ namespace TugasAkhirTest
 
         private void AbsenKeluar_Load(object sender, EventArgs e)
         {
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select employeeinfo.nip, namapegawai, namadiv, namajabat, hari_masuk, jammasuk, username from employeeinfo, user, absensi where user.username = employeeinfo.nip and employeeinfo.nip = absensi.nip";
-            cmd.Connection = con;
-            MySqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
-            {
-                info_txt.Text = dr["NIP"] + "\n" + dr["NamaPegawai"]+"\n"+dr["NamaDiv"]+"\n"+dr["NamaJabat"]+"\n"+dr["Hari_Masuk"]+"\n"+dr["JamMasuk"].ToString();
-            }
-            con.Close();
+            
         }
 
         private void absenkeluar_btn_Click(object sender, EventArgs e)
@@ -40,7 +30,7 @@ namespace TugasAkhirTest
             con.Open();
             MySqlCommand cmd = new MySqlCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update absensi set jamkeluar = '"+jamkeluar+"' where ";
+            cmd.CommandText = "update absensi set jamkeluar = '"+jamkeluar+"' where NIP = '"+NIPkeluar_txt.Text+"' and hari_masuk=current_date()";
             cmd.Connection = con;
             if (cmd.ExecuteNonQuery() == 1)
             {
@@ -49,6 +39,38 @@ namespace TugasAkhirTest
             else
             {
                 MessageBox.Show("Absen gagal");
+            }
+            con.Close();
+        }
+
+        private void search_button_Click(object sender, EventArgs e)
+        {
+            string NIPkeluar = NIPkeluar_txt.Text;
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select nip from absensi where nip='" + NIPkeluar + "'";
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            if(dt.Rows.Count >= 1)
+            {
+                //con.Open();
+                MySqlCommand cmd2 = new MySqlCommand();
+                cmd2.CommandType = CommandType.Text;
+                cmd2.CommandText = "select absensi.NIP, namapegawai, jammasuk from employeeinfo, absensi where employeeinfo.nip=absensi.nip and absensi.NIP = '"+NIPkeluar+"' and hari_masuk=current_date()";
+                cmd2.Connection = con;
+                MySqlDataReader dr = cmd2.ExecuteReader();
+                while (dr.Read())
+                {
+                    NIPkeluar_txt.Text = dr["NIP"].ToString();
+                    namapegawaikeluar_txt.Text = dr["namapegawai"].ToString();
+                    jammasukkeluar_txt.Text = dr["jammasuk"].ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Data tidak ditemukan");
             }
             con.Close();
         }
