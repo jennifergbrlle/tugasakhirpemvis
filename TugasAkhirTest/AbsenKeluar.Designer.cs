@@ -120,6 +120,7 @@
             this.search_button.Size = new System.Drawing.Size(25, 25);
             this.search_button.TabIndex = 9;
             this.search_button.UseVisualStyleBackColor = true;
+            this.search_button.Click += new System.EventHandler(this.search_button_Click);
             // 
             // AbsenKeluar
             // 

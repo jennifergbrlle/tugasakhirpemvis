@@ -20,22 +20,7 @@ namespace TugasAkhirTest
         }
 
         private void AbsenMasuk_Load(object sender, EventArgs e)
-        {
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select nip, namapegawai, namadiv, namajabat, username from employeeinfo, user where user.username like employeeinfo.nip";
-            cmd.Connection = con;
-            MySqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
-            {
-                NIPmasuk_txt.Text = dr["NIP"].ToString();
-                namapegawaimasuk_txt.Text = dr["NamaPegawai"].ToString();
-                divisimasuk_txt.Text = dr["NamaDiv"].ToString();
-                jabatanmasuk_txt.Text = dr["NamaJabat"].ToString();
-            }
-            con.Close();
-
+        { 
             timer1.Start();
             hari.Text = DateTime.Now.ToLongDateString();
             jam.Text = DateTime.Now.ToLongTimeString();
@@ -62,6 +47,36 @@ namespace TugasAkhirTest
             else
             {
                 MessageBox.Show("Absen gagal");
+            }
+            con.Close();
+        }
+
+        private void search_btn_Click(object sender, EventArgs e)
+        {
+            string NIPMasuk = NIPmasuk_txt.Text;
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select nip from employeeinfo where nip='" + NIPMasuk + "'";
+            DataTable dt = new DataTable();
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            da.Fill(dt);
+            if(dt.Rows.Count == 1)
+            {
+               // con.Open();
+                MySqlCommand cmd2 = new MySqlCommand();
+                cmd2.CommandType = CommandType.Text;
+                cmd2.CommandText = "select nip, namapegawai, namadiv, namajabat from employeeinfo where nip = '"+NIPMasuk+"'";
+                cmd2.Connection = con;
+                MySqlDataReader dr = cmd2.ExecuteReader();
+                while (dr.Read())
+                {
+                    NIPmasuk_txt.Text = dr["NIP"].ToString();
+                    namapegawaimasuk_txt.Text = dr["NamaPegawai"].ToString();
+                    divisimasuk_txt.Text = dr["NamaDiv"].ToString();
+                    jabatanmasuk_txt.Text = dr["NamaJabat"].ToString();
+                }
+                
             }
             con.Close();
         }
