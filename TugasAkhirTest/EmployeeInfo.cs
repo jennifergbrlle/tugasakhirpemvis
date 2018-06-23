@@ -58,6 +58,7 @@ namespace TugasAkhirTest
         {
             /*String hasilkiriman = Login.username;
             MessageBox.Show(hasilkiriman);*/
+            //global
         }
 
         private void label32_Click(object sender, EventArgs e)
