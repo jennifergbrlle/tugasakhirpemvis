@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Web;
 
 namespace TugasAkhirTest
 {
     public partial class MenuKaryawan : Form
     {
+        public string b;
+        public void ab(string a)
+        {
+            b = a.ToString();
+        }
         public MenuKaryawan()
         {
             InitializeComponent();

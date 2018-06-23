@@ -54,11 +54,13 @@ namespace TugasAkhirTest
             con.Close();
         }
 
+        internal void ab(string v)
+        {
+            throw new NotImplementedException();
+        }
+
         private void EmployeeInfo_Load(object sender, EventArgs e)
         {
-            /*String hasilkiriman = Login.username;
-            MessageBox.Show(hasilkiriman);*/
-            //global
         }
 
         private void label32_Click(object sender, EventArgs e)
