@@ -8,12 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 namespace TugasAkhirTest
 {
     public partial class AbsenMasuk : UserControl
     {
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
+        Regex isAllLetters = new Regex(@"^[a-zA-Z ]+$");
+        Regex isAlphaNumeric = new Regex(@"^[a-zA-Z0-9/. -]+$");
+        Regex isAllNumbers = new Regex(@"^\d+$");
         public AbsenMasuk()
         {
             InitializeComponent();
@@ -79,6 +83,25 @@ namespace TugasAkhirTest
                 
             }
             con.Close();
+        }
+
+        private void NIPmasuk_txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(NIPmasuk_txt.Text))
+            {
+                errorProvider1.SetError(NIPmasuk_txt, "Silahkan masukan NIP");
+                simpanmasuk_btn.Enabled = false;
+            }
+            else if (NIPmasuk_txt.Text.Length < 4 || NIPmasuk_txt.Text.Length > 10 || !isAllNumbers.IsMatch(NIPmasuk_txt.Text))
+            {
+                errorProvider1.SetError(NIPmasuk_txt, "NIP harus terdiri dari 4 digit atau lebih");
+                simpanmasuk_btn.Enabled = false;
+            }
+            else
+            {
+                errorProvider1.SetError(NIPmasuk_txt, null);
+                simpanmasuk_btn.Enabled = true;
+            }
         }
     }
 }

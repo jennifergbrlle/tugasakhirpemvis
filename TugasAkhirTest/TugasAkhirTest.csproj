@@ -75,12 +75,6 @@
     <Compile Include="AbsenMasuk.Designer.cs">
       <DependentUpon>AbsenMasuk.cs</DependentUpon>
     </Compile>
-    <Compile Include="AbsensiAdmin.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AbsensiAdmin.Designer.cs">
-      <DependentUpon>AbsensiAdmin.cs</DependentUpon>
-    </Compile>
     <Compile Include="AddPegawai.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,12 +141,6 @@
     <Compile Include="HomeKaryawan.Designer.cs">
       <DependentUpon>HomeKaryawan.cs</DependentUpon>
     </Compile>
-    <Compile Include="LaporanAbsen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LaporanAbsen.Designer.cs">
-      <DependentUpon>LaporanAbsen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,9 +176,6 @@
     <EmbeddedResource Include="AbsenMasuk.resx">
       <DependentUpon>AbsenMasuk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AbsensiAdmin.resx">
-      <DependentUpon>AbsensiAdmin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AddPegawai.resx">
       <DependentUpon>AddPegawai.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,9 +208,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HomeKaryawan.resx">
       <DependentUpon>HomeKaryawan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LaporanAbsen.resx">
-      <DependentUpon>LaporanAbsen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

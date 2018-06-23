@@ -8,12 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 namespace TugasAkhirTest
 {
     public partial class AbsenKeluar : UserControl
     {
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
+        Regex isAllLetters = new Regex(@"^[a-zA-Z ]+$");
+        Regex isAlphaNumeric = new Regex(@"^[a-zA-Z0-9/. -]+$");
+        Regex isAllNumbers = new Regex(@"^\d+$");
         public AbsenKeluar()
         {
             InitializeComponent();
@@ -73,6 +77,30 @@ namespace TugasAkhirTest
                 MessageBox.Show("Data tidak ditemukan");
             }
             con.Close();
+        }
+
+        private void NIPkeluar_txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NIPkeluar_txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(NIPkeluar_txt.Text))
+            {
+                errorProvider1.SetError(NIPkeluar_txt, "Silahkan masukan NIP");
+                absenkeluar_btn.Enabled = false;
+            }
+            else if(NIPkeluar_txt.Text.Length < 4 || NIPkeluar_txt.Text.Length > 10 || !isAllNumbers.IsMatch(NIPkeluar_txt.Text))
+            {
+                errorProvider1.SetError(NIPkeluar_txt, "NIP harus terdiri dari 4 digit atau lebih");
+                absenkeluar_btn.Enabled = false;
+            }
+            else
+            {
+                errorProvider1.SetError(NIPkeluar_txt, null);
+                absenkeluar_btn.Enabled = true;
+            }
         }
     }
 }
