@@ -59,7 +59,6 @@ namespace TugasAkhirTest
 
         private void MenuKaryawan_Load(object sender, EventArgs e)
         {
-          
         }
 
         private void logout_btn_Click(object sender, EventArgs e)

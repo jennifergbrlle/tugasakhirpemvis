@@ -28,7 +28,7 @@ namespace TugasAkhirTest
             DataGridViewButtonColumn acceptbtn = new DataGridViewButtonColumn();
             acceptbtn.Name = "Accept";
             acceptbtn.Text = "Accept";
-            acceptbtn.UseColumnTextForButtonValue = false;
+            acceptbtn.UseColumnTextForButtonValue = true;
 
             dataGridView1.Columns.Add(acceptbtn);
         }
@@ -37,7 +37,7 @@ namespace TugasAkhirTest
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select cuti.NIP, namapegawai, namadiv, namajabat, tanggal_mulai, tanggal_selesai, keperluan from employeeinfo,cuti where employeeinfo.nip = cuti.nip";
+            cmd.CommandText = "select cuti.NIP, namapegawai, namadiv, namajabat, tanggal_mulai, tanggal_selesai, keperluan from employeeinfo,cuti where employeeinfo.nip = cuti.nip and status is null";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -68,11 +68,13 @@ namespace TugasAkhirTest
                 {
                     MessageBox.Show("Cuti disetujui");
                     //kalo berhasil, dia akan kurangin jatahcuti, disini yg masih salah
-                    MySqlCommand cmd2 = new MySqlCommand();
+                    MySqlCommand cmd2 = con.CreateCommand();
                     cmd2.CommandType = CommandType.Text;
-                    cmd2.CommandText = "update pegawai set jatahcuti = (jatahcuti-'" + waktucuti + "') where nip = '"+nip+"'";
+                    cmd2.CommandText = "update pegawai set JatahCuti = JatahCuti - '"+waktucuti+"' where nip = '"+nip+"'";
                     cmd.Connection = con;
-                    cmd.ExecuteNonQuery();
+                    MySqlDataReader dr = cmd2.ExecuteReader();
+                    int test = dataGridView1.CurrentCell.RowIndex;
+                    dataGridView1.Rows.RemoveAt(test);
                 }
                 else
                 {
