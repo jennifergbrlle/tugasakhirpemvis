@@ -8,12 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 namespace TugasAkhirTest
 {
     public partial class AbsenKeluar : UserControl
     {
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
+        Regex isAllLetters = new Regex(@"^[a-zA-Z ]+$");
+        Regex isAlphaNumeric = new Regex(@"^[a-zA-Z0-9/. -]+$");
+        Regex isAllNumbers = new Regex(@"^\d+$");
         public AbsenKeluar()
         {
             InitializeComponent();
@@ -26,21 +30,24 @@ namespace TugasAkhirTest
 
         private void absenkeluar_btn_Click(object sender, EventArgs e)
         {
-            string jamkeluar = DateTime.Now.ToString("H:mm:ss");
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update absensi set jamkeluar = '"+jamkeluar+"' where NIP = '"+NIPkeluar_txt.Text+"' and hari_masuk=current_date()";
-            cmd.Connection = con;
-            if (cmd.ExecuteNonQuery() == 1)
+            if (this.ValidateChildren())
             {
-                MessageBox.Show("Absen disimpan");
+                string jamkeluar = DateTime.Now.ToString("H:mm:ss");
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "update absensi set jamkeluar = '" + jamkeluar + "' where NIP = '" + NIPkeluar_txt.Text + "' and hari_masuk=current_date()";
+                cmd.Connection = con;
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Absen disimpan");
+                }
+                else
+                {
+                    MessageBox.Show("Absen gagal");
+                }
+                con.Close();
             }
-            else
-            {
-                MessageBox.Show("Absen gagal");
-            }
-            con.Close();
         }
 
         private void search_button_Click(object sender, EventArgs e)
@@ -73,6 +80,30 @@ namespace TugasAkhirTest
                 MessageBox.Show("Data tidak ditemukan");
             }
             con.Close();
+        }
+
+        private void NIPkeluar_txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NIPkeluar_txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(NIPkeluar_txt.Text))
+            {
+                errorProvider1.SetError(NIPkeluar_txt, "Silahkan masukan NIP");
+                absenkeluar_btn.Enabled = false;
+            }
+            else if(NIPkeluar_txt.Text.Length < 4 || NIPkeluar_txt.Text.Length > 10 || !isAllNumbers.IsMatch(NIPkeluar_txt.Text))
+            {
+                errorProvider1.SetError(NIPkeluar_txt, "NIP harus terdiri dari 4 digit atau lebih");
+                absenkeluar_btn.Enabled = false;
+            }
+            else
+            {
+                errorProvider1.SetError(NIPkeluar_txt, null);
+                absenkeluar_btn.Enabled = true;
+            }
         }
     }
 }

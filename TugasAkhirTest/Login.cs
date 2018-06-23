@@ -15,19 +15,18 @@ namespace TugasAkhirTest
     {
         string a;
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
-        public Login()
-        {
-            InitializeComponent();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        public Login()
+        {
+            InitializeComponent();
+        }
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(a);
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
@@ -61,8 +60,6 @@ namespace TugasAkhirTest
             con.Close();
             
         }
-
-        
 
         private void password_txt_KeyDown(object sender, KeyEventArgs e)
         {

@@ -8,12 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 namespace TugasAkhirTest
 {
     public partial class AbsenMasuk : UserControl
     {
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
+        Regex isAllLetters = new Regex(@"^[a-zA-Z ]+$");
+        Regex isAlphaNumeric = new Regex(@"^[a-zA-Z0-9/. -]+$");
+        Regex isAllNumbers = new Regex(@"^\d+$");
         public AbsenMasuk()
         {
             InitializeComponent();
@@ -34,21 +38,25 @@ namespace TugasAkhirTest
 
         private void simpanmasuk_btn_Click(object sender, EventArgs e)
         {
-            string harimasuk = DateTime.Today.ToString("yyyy-MM-dd");
-            string jammasuk = DateTime.Now.ToString("H:mm:ss");
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into absensi(NIP, Hari_Masuk, JamMasuk) values('"+NIPmasuk_txt.Text+"','"+harimasuk+"','"+jammasuk+"' )";
-            cmd.Connection = con;
-            if(cmd.ExecuteNonQuery()==1){
-                MessageBox.Show("Absen disimpan");
-            }
-            else
+            if (this.ValidateChildren())
             {
-                MessageBox.Show("Absen gagal");
+                string harimasuk = DateTime.Today.ToString("yyyy-MM-dd");
+                string jammasuk = DateTime.Now.ToString("H:mm:ss");
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "insert into absensi(NIP, Hari_Masuk, JamMasuk) values('" + NIPmasuk_txt.Text + "','" + harimasuk + "','" + jammasuk + "' )";
+                cmd.Connection = con;
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Absen disimpan");
+                }
+                else
+                {
+                    MessageBox.Show("Absen gagal");
+                }
+                con.Close();
             }
-            con.Close();
         }
 
         private void search_btn_Click(object sender, EventArgs e)
@@ -79,6 +87,33 @@ namespace TugasAkhirTest
                 
             }
             con.Close();
+        }
+
+        private void NIPmasuk_txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(NIPmasuk_txt.Text))
+            {
+                errorProvider1.SetError(NIPmasuk_txt, "Silahkan masukan NIP");
+                simpanmasuk_btn.Enabled = false;
+            }
+            else if (NIPmasuk_txt.Text.Length < 4 || NIPmasuk_txt.Text.Length > 10 || !isAllNumbers.IsMatch(NIPmasuk_txt.Text))
+            {
+                errorProvider1.SetError(NIPmasuk_txt, "NIP harus terdiri dari 4 digit atau lebih");
+                simpanmasuk_btn.Enabled = false;
+            }
+            else
+            {
+                errorProvider1.SetError(NIPmasuk_txt, null);
+                simpanmasuk_btn.Enabled = true;
+            }
+        }
+
+        private void batalmasuk_btn_Click(object sender, EventArgs e)
+        {
+            NIPmasuk_txt.Text = null;
+            namapegawaimasuk_txt.Text = null;
+            divisimasuk_txt.Text = null;
+            jabatanmasuk_txt.Text = null;
         }
     }
 }

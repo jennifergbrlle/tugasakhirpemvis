@@ -30,18 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.sidemenu = new System.Windows.Forms.Panel();
+            this.sidepanel = new System.Windows.Forms.Panel();
             this.aboutadmin_btn = new System.Windows.Forms.Button();
             this.attendanceadmin_btn = new System.Windows.Forms.Button();
             this.employeeadmin_btn = new System.Windows.Forms.Button();
             this.homeadmin_btn = new System.Windows.Forms.Button();
-            this.exit_button = new System.Windows.Forms.Button();
-            this.sidepanel = new System.Windows.Forms.Panel();
             this.employeeMnAdmin1 = new TugasAkhirTest.EmployeeMnAdmin();
             this.attendanceMnAdmin1 = new TugasAkhirTest.AttendanceMnAdmin();
             this.about1 = new TugasAkhirTest.About();
             this.homeAdmin1 = new TugasAkhirTest.HomeAdmin();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.sidemenu.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +58,19 @@
             this.panel1.Size = new System.Drawing.Size(800, 40);
             this.panel1.TabIndex = 0;
             // 
+            // exit_button
+            // 
+            this.exit_button.FlatAppearance.BorderSize = 0;
+            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit_button.ForeColor = System.Drawing.Color.Transparent;
+            this.exit_button.Image = ((System.Drawing.Image)(resources.GetObject("exit_button.Image")));
+            this.exit_button.Location = new System.Drawing.Point(758, 4);
+            this.exit_button.Name = "exit_button";
+            this.exit_button.Size = new System.Drawing.Size(30, 30);
+            this.exit_button.TabIndex = 2;
+            this.exit_button.UseVisualStyleBackColor = true;
+            this.exit_button.Click += new System.EventHandler(this.exit_button_Click_1);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -70,6 +84,7 @@
             // sidemenu
             // 
             this.sidemenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.sidemenu.Controls.Add(this.logout_btn);
             this.sidemenu.Controls.Add(this.sidepanel);
             this.sidemenu.Controls.Add(this.aboutadmin_btn);
             this.sidemenu.Controls.Add(this.attendanceadmin_btn);
@@ -81,6 +96,14 @@
             this.sidemenu.Name = "sidemenu";
             this.sidemenu.Size = new System.Drawing.Size(185, 510);
             this.sidemenu.TabIndex = 1;
+            // 
+            // sidepanel
+            // 
+            this.sidepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
+            this.sidepanel.Location = new System.Drawing.Point(0, 137);
+            this.sidepanel.Name = "sidepanel";
+            this.sidepanel.Size = new System.Drawing.Size(13, 37);
+            this.sidepanel.TabIndex = 6;
             // 
             // aboutadmin_btn
             // 
@@ -146,27 +169,6 @@
             this.homeadmin_btn.UseVisualStyleBackColor = true;
             this.homeadmin_btn.Click += new System.EventHandler(this.homeadmin_btn_Click);
             // 
-            // exit_button
-            // 
-            this.exit_button.FlatAppearance.BorderSize = 0;
-            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit_button.ForeColor = System.Drawing.Color.Transparent;
-            this.exit_button.Image = ((System.Drawing.Image)(resources.GetObject("exit_button.Image")));
-            this.exit_button.Location = new System.Drawing.Point(758, 4);
-            this.exit_button.Name = "exit_button";
-            this.exit_button.Size = new System.Drawing.Size(30, 30);
-            this.exit_button.TabIndex = 2;
-            this.exit_button.UseVisualStyleBackColor = true;
-            this.exit_button.Click += new System.EventHandler(this.exit_button_Click_1);
-            // 
-            // sidepanel
-            // 
-            this.sidepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
-            this.sidepanel.Location = new System.Drawing.Point(0, 137);
-            this.sidepanel.Name = "sidepanel";
-            this.sidepanel.Size = new System.Drawing.Size(13, 37);
-            this.sidepanel.TabIndex = 6;
-            // 
             // employeeMnAdmin1
             // 
             this.employeeMnAdmin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -207,6 +209,23 @@
             this.homeAdmin1.Size = new System.Drawing.Size(615, 465);
             this.homeAdmin1.TabIndex = 2;
             // 
+            // logout_btn
+            // 
+            this.logout_btn.FlatAppearance.BorderSize = 0;
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_btn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_btn.ForeColor = System.Drawing.SystemColors.Control;
+            this.logout_btn.Image = ((System.Drawing.Image)(resources.GetObject("logout_btn.Image")));
+            this.logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logout_btn.Location = new System.Drawing.Point(16, 475);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(75, 23);
+            this.logout_btn.TabIndex = 9;
+            this.logout_btn.Text = "Logout";
+            this.logout_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_btn.UseVisualStyleBackColor = true;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
+            // 
             // MenuAdmin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -245,5 +264,6 @@
         private About about1;
         private AttendanceMnAdmin attendanceMnAdmin1;
         private EmployeeMnAdmin employeeMnAdmin1;
+        private System.Windows.Forms.Button logout_btn;
     }
 }

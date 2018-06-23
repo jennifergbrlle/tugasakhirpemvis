@@ -31,18 +31,18 @@
             this.absenmasuk_btn = new System.Windows.Forms.Button();
             this.absenkeluar_btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.absenKeluar1 = new TugasAkhirTest.AbsenKeluar();
             this.absenMasuk1 = new TugasAkhirTest.AbsenMasuk();
+            this.absenKeluar1 = new TugasAkhirTest.AbsenKeluar();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // absenmasuk_btn
             // 
             this.absenmasuk_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.absenmasuk_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.absenmasuk_btn.Location = new System.Drawing.Point(129, 18);
+            this.absenmasuk_btn.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.absenmasuk_btn.Location = new System.Drawing.Point(169, 18);
             this.absenmasuk_btn.Name = "absenmasuk_btn";
-            this.absenmasuk_btn.Size = new System.Drawing.Size(163, 33);
+            this.absenmasuk_btn.Size = new System.Drawing.Size(123, 33);
             this.absenmasuk_btn.TabIndex = 0;
             this.absenmasuk_btn.Text = "Absen Masuk";
             this.absenmasuk_btn.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // absenkeluar_btn
             // 
             this.absenkeluar_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.absenkeluar_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.absenkeluar_btn.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.absenkeluar_btn.Location = new System.Drawing.Point(322, 18);
             this.absenkeluar_btn.Name = "absenkeluar_btn";
-            this.absenkeluar_btn.Size = new System.Drawing.Size(163, 33);
+            this.absenkeluar_btn.Size = new System.Drawing.Size(123, 33);
             this.absenkeluar_btn.TabIndex = 1;
             this.absenkeluar_btn.Text = "Absen Keluar";
             this.absenkeluar_btn.UseVisualStyleBackColor = true;
@@ -70,16 +70,6 @@
             this.panel1.Size = new System.Drawing.Size(615, 379);
             this.panel1.TabIndex = 2;
             // 
-            // absenKeluar1
-            // 
-            this.absenKeluar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.absenKeluar1.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.absenKeluar1.ForeColor = System.Drawing.SystemColors.Control;
-            this.absenKeluar1.Location = new System.Drawing.Point(0, 0);
-            this.absenKeluar1.Name = "absenKeluar1";
-            this.absenKeluar1.Size = new System.Drawing.Size(615, 380);
-            this.absenKeluar1.TabIndex = 0;
-            // 
             // absenMasuk1
             // 
             this.absenMasuk1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
@@ -89,6 +79,16 @@
             this.absenMasuk1.Name = "absenMasuk1";
             this.absenMasuk1.Size = new System.Drawing.Size(615, 380);
             this.absenMasuk1.TabIndex = 1;
+            // 
+            // absenKeluar1
+            // 
+            this.absenKeluar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.absenKeluar1.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.absenKeluar1.ForeColor = System.Drawing.SystemColors.Control;
+            this.absenKeluar1.Location = new System.Drawing.Point(0, 0);
+            this.absenKeluar1.Name = "absenKeluar1";
+            this.absenKeluar1.Size = new System.Drawing.Size(615, 380);
+            this.absenKeluar1.TabIndex = 0;
             // 
             // AttendanceMnKaryawan
             // 

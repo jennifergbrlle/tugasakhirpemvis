@@ -42,6 +42,7 @@
             this.employeeMnKaryawan1 = new TugasAkhirTest.EmployeeMnKaryawan();
             this.about1 = new TugasAkhirTest.About();
             this.homeKaryawan1 = new TugasAkhirTest.HomeKaryawan();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.sidemenu.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +84,7 @@
             // sidemenu
             // 
             this.sidemenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.sidemenu.Controls.Add(this.logout_btn);
             this.sidemenu.Controls.Add(this.sidepanel);
             this.sidemenu.Controls.Add(this.aboutkaryawan_btn);
             this.sidemenu.Controls.Add(this.attendancekaryawan_btn);
@@ -208,6 +210,22 @@
             this.homeKaryawan1.Size = new System.Drawing.Size(615, 465);
             this.homeKaryawan1.TabIndex = 3;
             // 
+            // logout_btn
+            // 
+            this.logout_btn.FlatAppearance.BorderSize = 0;
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_btn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_btn.Image = ((System.Drawing.Image)(resources.GetObject("logout_btn.Image")));
+            this.logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logout_btn.Location = new System.Drawing.Point(16, 475);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(75, 23);
+            this.logout_btn.TabIndex = 8;
+            this.logout_btn.Text = "Logout";
+            this.logout_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_btn.UseVisualStyleBackColor = true;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
+            // 
             // MenuKaryawan
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -247,5 +265,6 @@
         private About about1;
         private EmployeeMnKaryawan employeeMnKaryawan1;
         private AttendanceMnKaryawan attendanceMnKaryawan1;
+        private System.Windows.Forms.Button logout_btn;
     }
 }

@@ -56,5 +56,10 @@ namespace TugasAkhirTest
         {
             Application.Exit();
         }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }

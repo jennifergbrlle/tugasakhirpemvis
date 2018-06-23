@@ -43,7 +43,7 @@
             this.employeeinfokaryawan_btn.ForeColor = System.Drawing.SystemColors.Control;
             this.employeeinfokaryawan_btn.Location = new System.Drawing.Point(150, 13);
             this.employeeinfokaryawan_btn.Name = "employeeinfokaryawan_btn";
-            this.employeeinfokaryawan_btn.Size = new System.Drawing.Size(153, 33);
+            this.employeeinfokaryawan_btn.Size = new System.Drawing.Size(153, 30);
             this.employeeinfokaryawan_btn.TabIndex = 0;
             this.employeeinfokaryawan_btn.Text = "Employee Info";
             this.employeeinfokaryawan_btn.UseVisualStyleBackColor = true;
@@ -55,7 +55,7 @@
             this.cutikaryawan_btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cutikaryawan_btn.Location = new System.Drawing.Point(326, 13);
             this.cutikaryawan_btn.Name = "cutikaryawan_btn";
-            this.cutikaryawan_btn.Size = new System.Drawing.Size(113, 33);
+            this.cutikaryawan_btn.Size = new System.Drawing.Size(113, 30);
             this.cutikaryawan_btn.TabIndex = 1;
             this.cutikaryawan_btn.Text = "Cuti";
             this.cutikaryawan_btn.UseVisualStyleBackColor = true;

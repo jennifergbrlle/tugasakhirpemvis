@@ -43,7 +43,7 @@
             this.infopegawaiadmin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.infopegawaiadmin_btn.Location = new System.Drawing.Point(34, 15);
             this.infopegawaiadmin_btn.Name = "infopegawaiadmin_btn";
-            this.infopegawaiadmin_btn.Size = new System.Drawing.Size(128, 33);
+            this.infopegawaiadmin_btn.Size = new System.Drawing.Size(128, 30);
             this.infopegawaiadmin_btn.TabIndex = 0;
             this.infopegawaiadmin_btn.Text = "Info Pegawai";
             this.infopegawaiadmin_btn.UseVisualStyleBackColor = true;
@@ -54,7 +54,7 @@
             this.addpegawaiadmin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addpegawaiadmin_btn.Location = new System.Drawing.Point(177, 15);
             this.addpegawaiadmin_btn.Name = "addpegawaiadmin_btn";
-            this.addpegawaiadmin_btn.Size = new System.Drawing.Size(140, 33);
+            this.addpegawaiadmin_btn.Size = new System.Drawing.Size(140, 30);
             this.addpegawaiadmin_btn.TabIndex = 1;
             this.addpegawaiadmin_btn.Text = "Add Pegawai";
             this.addpegawaiadmin_btn.UseVisualStyleBackColor = true;
@@ -65,7 +65,7 @@
             this.updatepegawaiadmin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updatepegawaiadmin_btn.Location = new System.Drawing.Point(332, 15);
             this.updatepegawaiadmin_btn.Name = "updatepegawaiadmin_btn";
-            this.updatepegawaiadmin_btn.Size = new System.Drawing.Size(152, 33);
+            this.updatepegawaiadmin_btn.Size = new System.Drawing.Size(152, 30);
             this.updatepegawaiadmin_btn.TabIndex = 2;
             this.updatepegawaiadmin_btn.Text = "Update Pegawai";
             this.updatepegawaiadmin_btn.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@
             this.cutiadmin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cutiadmin_btn.Location = new System.Drawing.Point(499, 15);
             this.cutiadmin_btn.Name = "cutiadmin_btn";
-            this.cutiadmin_btn.Size = new System.Drawing.Size(75, 33);
+            this.cutiadmin_btn.Size = new System.Drawing.Size(75, 30);
             this.cutiadmin_btn.TabIndex = 3;
             this.cutiadmin_btn.Text = "Cuti";
             this.cutiadmin_btn.UseVisualStyleBackColor = true;
