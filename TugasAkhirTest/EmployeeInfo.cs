@@ -71,6 +71,8 @@ namespace TugasAkhirTest
         {
             if(e.KeyCode == Keys.Enter)
             {
+                /*String hasilkiriman = Login.username;
+                MessageBox.Show(hasilkiriman);*/
                 search_button_Click(this, new EventArgs());
             }
         }

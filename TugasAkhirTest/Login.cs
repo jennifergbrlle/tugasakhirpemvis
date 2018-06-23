@@ -53,9 +53,7 @@ namespace TugasAkhirTest
             con.Close();
             
         }
-
-        
-
+  
         private void password_txt_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
