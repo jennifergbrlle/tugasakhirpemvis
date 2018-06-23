@@ -14,10 +14,14 @@ namespace TugasAkhirTest
     public partial class Login : Form
     {
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        public Login()
+        {
+            InitializeComponent();
         }
 
         private void login_btn_Click(object sender, EventArgs e)

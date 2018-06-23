@@ -30,21 +30,24 @@ namespace TugasAkhirTest
 
         private void absenkeluar_btn_Click(object sender, EventArgs e)
         {
-            string jamkeluar = DateTime.Now.ToString("H:mm:ss");
-            con.Open();
-            MySqlCommand cmd = new MySqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update absensi set jamkeluar = '"+jamkeluar+"' where NIP = '"+NIPkeluar_txt.Text+"' and hari_masuk=current_date()";
-            cmd.Connection = con;
-            if (cmd.ExecuteNonQuery() == 1)
+            if (this.ValidateChildren())
             {
-                MessageBox.Show("Absen disimpan");
+                string jamkeluar = DateTime.Now.ToString("H:mm:ss");
+                con.Open();
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "update absensi set jamkeluar = '" + jamkeluar + "' where NIP = '" + NIPkeluar_txt.Text + "' and hari_masuk=current_date()";
+                cmd.Connection = con;
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("Absen disimpan");
+                }
+                else
+                {
+                    MessageBox.Show("Absen gagal");
+                }
+                con.Close();
             }
-            else
-            {
-                MessageBox.Show("Absen gagal");
-            }
-            con.Close();
         }
 
         private void search_button_Click(object sender, EventArgs e)

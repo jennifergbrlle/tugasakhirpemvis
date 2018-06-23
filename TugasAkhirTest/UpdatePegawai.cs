@@ -37,6 +37,7 @@ namespace TugasAkhirTest
             lakilakiupdate_btn.Checked = false;
             perempuanupdate_btn.Checked = false;
             tempatlahirupdate_btn.SelectedIndex = -1;
+            tgllahirupdate_txt.Value = DateTime.Now;
             agamaupdate_txt.SelectedIndex = -1;
             pendidikanupdate_txt.SelectedIndex = -1;
             alamatupdate_txt.Text = null;
@@ -48,6 +49,7 @@ namespace TugasAkhirTest
             golABupdate_btn.Checked = false;
             divisiupdate_txt.SelectedIndex = -1;
             jabatanupdate_txt.SelectedIndex = -1;
+            tglmasukupdate_txt.Value = DateTime.Now;
             noktpupdate_txt.Text = null;
             nosimupdate_txt.Text = null;
             npwpupdate_txt.Text = null;

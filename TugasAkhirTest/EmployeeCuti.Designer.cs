@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeCuti));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,6 +48,8 @@
             this.ajukancuti_txt = new System.Windows.Forms.Button();
             this.batalcuti_txt = new System.Windows.Forms.Button();
             this.search_btn = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -131,6 +134,7 @@
             // 
             // namapegawaicuti_txt
             // 
+            this.namapegawaicuti_txt.Enabled = false;
             this.namapegawaicuti_txt.Location = new System.Drawing.Point(143, 133);
             this.namapegawaicuti_txt.Name = "namapegawaicuti_txt";
             this.namapegawaicuti_txt.Size = new System.Drawing.Size(157, 24);
@@ -138,6 +142,7 @@
             // 
             // divisicuti_txt
             // 
+            this.divisicuti_txt.Enabled = false;
             this.divisicuti_txt.Location = new System.Drawing.Point(143, 170);
             this.divisicuti_txt.Name = "divisicuti_txt";
             this.divisicuti_txt.Size = new System.Drawing.Size(157, 24);
@@ -145,6 +150,7 @@
             // 
             // jabatancuti_txt
             // 
+            this.jabatancuti_txt.Enabled = false;
             this.jabatancuti_txt.Location = new System.Drawing.Point(143, 207);
             this.jabatancuti_txt.Name = "jabatancuti_txt";
             this.jabatancuti_txt.Size = new System.Drawing.Size(157, 24);
@@ -175,6 +181,7 @@
             this.keterangancuti_txt.Name = "keterangancuti_txt";
             this.keterangancuti_txt.Size = new System.Drawing.Size(157, 59);
             this.keterangancuti_txt.TabIndex = 15;
+            this.keterangancuti_txt.Validating += new System.ComponentModel.CancelEventHandler(this.keterangancuti_txt_Validating);
             // 
             // ajukancuti_txt
             // 
@@ -198,6 +205,7 @@
             this.batalcuti_txt.TabIndex = 17;
             this.batalcuti_txt.Text = "BATAL";
             this.batalcuti_txt.UseVisualStyleBackColor = true;
+            this.batalcuti_txt.Click += new System.EventHandler(this.batalcuti_txt_Click);
             // 
             // search_btn
             // 
@@ -210,6 +218,10 @@
             this.search_btn.TabIndex = 18;
             this.search_btn.UseVisualStyleBackColor = true;
             this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // EmployeeCuti
             // 
@@ -238,6 +250,7 @@
             this.Name = "EmployeeCuti";
             this.Size = new System.Drawing.Size(615, 380);
             this.Load += new System.EventHandler(this.EmployeeCuti_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,5 +276,6 @@
         private System.Windows.Forms.Button ajukancuti_txt;
         private System.Windows.Forms.Button batalcuti_txt;
         private System.Windows.Forms.Button search_btn;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

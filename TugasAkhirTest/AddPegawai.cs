@@ -74,6 +74,7 @@ namespace TugasAkhirTest
             lakilakiadd_btn.Checked = false;
             perempuanadd_btn.Checked = false;
             tempatlahiradd_btn.SelectedIndex = -1;
+            tgllahiradd_date.Value = DateTime.Now;
             agamaadd_txt.SelectedIndex = -1;
             pendidikanadd_txt.SelectedIndex = -1;
             alamatadd_txt.Text = null;
@@ -85,6 +86,7 @@ namespace TugasAkhirTest
             golABadd_btn.Checked = false;
             divisiadd_txt.SelectedIndex = -1;
             jabatanadd_txt.SelectedIndex = -1;
+            tglmasukadd_txt.Value = DateTime.Now;
             noktpadd_txt.Text = null;
             nosimadd_txt.Text = null;
             npwpadd_txt.Text = null;
