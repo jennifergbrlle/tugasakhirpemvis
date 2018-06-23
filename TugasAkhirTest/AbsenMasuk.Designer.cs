@@ -156,7 +156,6 @@
             this.batalmasuk_btn.TabIndex = 12;
             this.batalmasuk_btn.Text = "BATAL";
             this.batalmasuk_btn.UseVisualStyleBackColor = true;
-            this.batalmasuk_btn.Click += new System.EventHandler(this.batalmasuk_btn_Click);
             // 
             // hari
             // 

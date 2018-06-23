@@ -20,10 +20,6 @@ namespace TugasAkhirTest
         {
             Application.Exit();
         }
-        public Login()
-        {
-            InitializeComponent();
-        }
 
         private void login_btn_Click(object sender, EventArgs e)
         {

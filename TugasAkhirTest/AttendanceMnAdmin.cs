@@ -46,16 +46,11 @@ namespace TugasAkhirTest
 
         private void search_btn_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
             string waktu = dateTimePicker1.Value.ToString("yyyy-MM-dd");
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from absensi where hari_masuk = '" + waktu + "'";
+            cmd.CommandText = "select * from absensi where hari_masuk = '"+waktu+"'";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);

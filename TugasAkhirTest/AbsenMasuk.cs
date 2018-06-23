@@ -38,25 +38,21 @@ namespace TugasAkhirTest
 
         private void simpanmasuk_btn_Click(object sender, EventArgs e)
         {
-            if (this.ValidateChildren())
-            {
-                string harimasuk = DateTime.Today.ToString("yyyy-MM-dd");
-                string jammasuk = DateTime.Now.ToString("H:mm:ss");
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into absensi(NIP, Hari_Masuk, JamMasuk) values('" + NIPmasuk_txt.Text + "','" + harimasuk + "','" + jammasuk + "' )";
-                cmd.Connection = con;
-                if (cmd.ExecuteNonQuery() == 1)
-                {
-                    MessageBox.Show("Absen disimpan");
-                }
-                else
-                {
-                    MessageBox.Show("Absen gagal");
-                }
-                con.Close();
+            string harimasuk = DateTime.Today.ToString("yyyy-MM-dd");
+            string jammasuk = DateTime.Now.ToString("H:mm:ss");
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into absensi(NIP, Hari_Masuk, JamMasuk) values('"+NIPmasuk_txt.Text+"','"+harimasuk+"','"+jammasuk+"' )";
+            cmd.Connection = con;
+            if(cmd.ExecuteNonQuery()==1){
+                MessageBox.Show("Absen disimpan");
             }
+            else
+            {
+                MessageBox.Show("Absen gagal");
+            }
+            con.Close();
         }
 
         private void search_btn_Click(object sender, EventArgs e)
@@ -106,14 +102,6 @@ namespace TugasAkhirTest
                 errorProvider1.SetError(NIPmasuk_txt, null);
                 simpanmasuk_btn.Enabled = true;
             }
-        }
-
-        private void batalmasuk_btn_Click(object sender, EventArgs e)
-        {
-            NIPmasuk_txt.Text = null;
-            namapegawaimasuk_txt.Text = null;
-            divisimasuk_txt.Text = null;
-            jabatanmasuk_txt.Text = null;
         }
     }
 }
