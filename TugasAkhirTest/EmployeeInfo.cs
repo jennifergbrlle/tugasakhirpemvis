@@ -70,11 +70,17 @@ namespace TugasAkhirTest
         private void NIPinfo_txt_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
-            {
+        internal void ab(string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void EmployeeInfo_Load(object sender, EventArgs e)
+        {
                 /*String hasilkiriman = Login.username;
                 MessageBox.Show(hasilkiriman);*/
                 search_button_Click(this, new EventArgs());
-            }
+        }
         }
     }
 }

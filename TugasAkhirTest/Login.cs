@@ -13,15 +13,12 @@ namespace TugasAkhirTest
 {
     public partial class Login : Form
     {
+        string a;
         MySqlConnection con = new MySqlConnection("Server=localhost; Database=sistem_pegawai; Uid=root; Pwd=;");
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-        public Login()
-        {
-            InitializeComponent();
         }
 
         private void login_btn_Click(object sender, EventArgs e)
@@ -46,7 +43,9 @@ namespace TugasAkhirTest
                 }
                 else
                 {
+                    a = username_txt.Text;
                     MenuKaryawan mnkaryawan = new MenuKaryawan();
+                    mnkaryawan.ab(a.ToString());
                     mnkaryawan.Show();
                 }
             }
@@ -57,7 +56,7 @@ namespace TugasAkhirTest
             con.Close();
             
         }
-  
+
         private void password_txt_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
