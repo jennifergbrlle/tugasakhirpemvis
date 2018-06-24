@@ -17,10 +17,9 @@ namespace TugasAkhirTest
         public AdminInfo()
         {
             InitializeComponent();
-            
+            DisplayData();
         }
-
-        private void AdminInfo_Load(object sender, EventArgs e)
+        private void DisplayData()
         {
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
@@ -34,6 +33,10 @@ namespace TugasAkhirTest
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.Refresh();
             con.Close();
+        }
+        private void AdminInfo_Load(object sender, EventArgs e)
+        {
+            
         }
 
         private void search_btn_Click(object sender, EventArgs e)
@@ -55,6 +58,29 @@ namespace TugasAkhirTest
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.Refresh();
             con.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int id = dataGridView1.SelectedCells[0].RowIndex;
+            int nip = Convert.ToInt32(dataGridView1.Rows[id].Cells[0].Value.ToString());
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "delete from pegawai where nip = '" + nip + "'";
+            cmd.ExecuteNonQuery();
+            MySqlCommand cmd2 = con.CreateCommand();
+            cmd2.CommandType = CommandType.Text;
+            cmd2.CommandText = "delete from user where username = '" + nip + "'";
+            cmd2.ExecuteNonQuery();
+            MessageBox.Show("Data berhasil dihapus");
+            con.Close();
+            DisplayData();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DisplayData();
         }
     }
 }

@@ -16,11 +16,13 @@ namespace TugasAkhirTest
         {
             InitializeComponent();
             adminInfo1.BringToFront();
+            adminInfo1.Refresh();
         }
 
         private void infopegawaiadmin_btn_Click(object sender, EventArgs e)
         {
             adminInfo1.BringToFront();
+            adminInfo1.Refresh();
         }
 
         private void addpegawaiadmin_btn_Click(object sender, EventArgs e)

@@ -475,7 +475,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "EmployeeInfo";
             this.Size = new System.Drawing.Size(615, 380);
-            this.Load += new System.EventHandler(this.EmployeeInfo_Load);
+//            this.Load += new System.EventHandler(this.EmployeeInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

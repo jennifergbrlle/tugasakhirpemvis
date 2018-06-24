@@ -41,9 +41,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(200, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 23);
+            this.label1.Size = new System.Drawing.Size(195, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Window Karyawan";
+            this.label1.Text = "Halaman Karyawan";
             // 
             // label2
             // 
@@ -52,7 +52,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(70, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(466, 114);
+            this.label2.Size = new System.Drawing.Size(500, 114);
             this.label2.TabIndex = 1;
             this.label2.Text = resources.GetString("label2.Text");
             // 

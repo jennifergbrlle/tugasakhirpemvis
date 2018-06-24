@@ -41,9 +41,9 @@
             this.label1.Location = new System.Drawing.Point(200, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 23);
+            this.label1.Size = new System.Drawing.Size(127, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Window Admin";
+            this.label1.Text = "Menu Admin";
             // 
             // label2
             // 
@@ -52,7 +52,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(70, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(441, 133);
+            this.label2.Size = new System.Drawing.Size(475, 133);
             this.label2.TabIndex = 1;
             this.label2.Text = resources.GetString("label2.Text");
             // 

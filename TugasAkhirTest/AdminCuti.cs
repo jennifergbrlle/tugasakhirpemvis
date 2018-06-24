@@ -50,7 +50,6 @@ namespace TugasAkhirTest
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //ini kalo accept button dipencet
             if(e.ColumnIndex == 7)
             {
                 DateTime mulai = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString());
@@ -62,12 +61,11 @@ namespace TugasAkhirTest
                 con.Open();
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "update cuti set status = '"+status+"' where nip = '"+nip+"'"; //masukin ke db status disetujui abis pencet accepbutton
+                cmd.CommandText = "update cuti set status = '"+status+"' where nip = '"+nip+"'"; 
                 cmd.Connection = con;
                 if(cmd.ExecuteNonQuery() == 1)
                 {
                     MessageBox.Show("Cuti disetujui");
-                    //kalo berhasil, dia akan kurangin jatahcuti, disini yg masih salah
                     MySqlCommand cmd2 = con.CreateCommand();
                     cmd2.CommandType = CommandType.Text;
                     cmd2.CommandText = "update pegawai set JatahCuti = JatahCuti - '"+waktucuti+"' where nip = '"+nip+"'";
@@ -76,15 +74,7 @@ namespace TugasAkhirTest
                     int test = dataGridView1.CurrentCell.RowIndex;
                     dataGridView1.Rows.RemoveAt(test);
                 }
-                else
-                {
-                    MessageBox.Show("asd");
-                }
                 con.Close();
-            }
-            else
-            {
-                MessageBox.Show("error");
             }
         }
     }

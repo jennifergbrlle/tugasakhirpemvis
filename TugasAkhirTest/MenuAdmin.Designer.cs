@@ -33,6 +33,7 @@
             this.exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.sidemenu = new System.Windows.Forms.Panel();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.sidepanel = new System.Windows.Forms.Panel();
             this.aboutadmin_btn = new System.Windows.Forms.Button();
             this.attendanceadmin_btn = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.attendanceMnAdmin1 = new TugasAkhirTest.AttendanceMnAdmin();
             this.about1 = new TugasAkhirTest.About();
             this.homeAdmin1 = new TugasAkhirTest.HomeAdmin();
-            this.logout_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.sidemenu.SuspendLayout();
             this.SuspendLayout();
@@ -97,6 +97,23 @@
             this.sidemenu.Size = new System.Drawing.Size(185, 510);
             this.sidemenu.TabIndex = 1;
             // 
+            // logout_btn
+            // 
+            this.logout_btn.FlatAppearance.BorderSize = 0;
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_btn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_btn.ForeColor = System.Drawing.SystemColors.Control;
+            this.logout_btn.Image = ((System.Drawing.Image)(resources.GetObject("logout_btn.Image")));
+            this.logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logout_btn.Location = new System.Drawing.Point(16, 475);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(75, 23);
+            this.logout_btn.TabIndex = 9;
+            this.logout_btn.Text = "Keluar";
+            this.logout_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_btn.UseVisualStyleBackColor = true;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
+            // 
             // sidepanel
             // 
             this.sidepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
@@ -116,7 +133,7 @@
             this.aboutadmin_btn.Name = "aboutadmin_btn";
             this.aboutadmin_btn.Size = new System.Drawing.Size(169, 37);
             this.aboutadmin_btn.TabIndex = 7;
-            this.aboutadmin_btn.Text = "          About";
+            this.aboutadmin_btn.Text = "          Tentang Kami";
             this.aboutadmin_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.aboutadmin_btn.UseVisualStyleBackColor = true;
             this.aboutadmin_btn.Click += new System.EventHandler(this.aboutadmin_btn_Click);
@@ -132,7 +149,7 @@
             this.attendanceadmin_btn.Name = "attendanceadmin_btn";
             this.attendanceadmin_btn.Size = new System.Drawing.Size(169, 37);
             this.attendanceadmin_btn.TabIndex = 6;
-            this.attendanceadmin_btn.Text = "          Attendance";
+            this.attendanceadmin_btn.Text = "          Kehadiran";
             this.attendanceadmin_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.attendanceadmin_btn.UseVisualStyleBackColor = true;
             this.attendanceadmin_btn.Click += new System.EventHandler(this.attendanceadmin_btn_Click);
@@ -148,7 +165,7 @@
             this.employeeadmin_btn.Name = "employeeadmin_btn";
             this.employeeadmin_btn.Size = new System.Drawing.Size(169, 37);
             this.employeeadmin_btn.TabIndex = 5;
-            this.employeeadmin_btn.Text = "          Employee";
+            this.employeeadmin_btn.Text = "          Pegawai";
             this.employeeadmin_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.employeeadmin_btn.UseVisualStyleBackColor = true;
             this.employeeadmin_btn.Click += new System.EventHandler(this.employeeadmin_btn_Click);
@@ -164,7 +181,7 @@
             this.homeadmin_btn.Name = "homeadmin_btn";
             this.homeadmin_btn.Size = new System.Drawing.Size(169, 37);
             this.homeadmin_btn.TabIndex = 4;
-            this.homeadmin_btn.Text = "          Home";
+            this.homeadmin_btn.Text = "          Beranda";
             this.homeadmin_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.homeadmin_btn.UseVisualStyleBackColor = true;
             this.homeadmin_btn.Click += new System.EventHandler(this.homeadmin_btn_Click);
@@ -208,23 +225,6 @@
             this.homeAdmin1.Name = "homeAdmin1";
             this.homeAdmin1.Size = new System.Drawing.Size(615, 465);
             this.homeAdmin1.TabIndex = 2;
-            // 
-            // logout_btn
-            // 
-            this.logout_btn.FlatAppearance.BorderSize = 0;
-            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logout_btn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout_btn.ForeColor = System.Drawing.SystemColors.Control;
-            this.logout_btn.Image = ((System.Drawing.Image)(resources.GetObject("logout_btn.Image")));
-            this.logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logout_btn.Location = new System.Drawing.Point(16, 475);
-            this.logout_btn.Name = "logout_btn";
-            this.logout_btn.Size = new System.Drawing.Size(75, 23);
-            this.logout_btn.TabIndex = 9;
-            this.logout_btn.Text = "Logout";
-            this.logout_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.logout_btn.UseVisualStyleBackColor = true;
-            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // MenuAdmin
             // 

@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label2.Text" xml:space="preserve">
-    <value>Menu ini merupakan window yang dapat diakses oleh admin.
+    <value>Halaman ini merupakan halaman yang dapat diakses oleh admin.
 Admin merupakan karyawan yang bekerja di bagian HR.
 
-Pada window ini, admin dapat :
+Pada halaman ini, admin dapat :
   &gt; melihat, menambahkan, mengedit data karyawan
   &gt; melakukan persetujuan atas permintaan cuti karyawan
-  &gt; melihat absensi pegawai dan mencetaknya</value>
+  &gt; melihat absensi pegawai</value>
   </data>
 </root>

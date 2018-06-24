@@ -32,55 +32,66 @@
             this.addpegawaiadmin_btn = new System.Windows.Forms.Button();
             this.updatepegawaiadmin_btn = new System.Windows.Forms.Button();
             this.cutiadmin_btn = new System.Windows.Forms.Button();
+            this.adminInfo1 = new TugasAkhirTest.AdminInfo();
             this.adminCuti1 = new TugasAkhirTest.AdminCuti();
             this.updatePegawai1 = new TugasAkhirTest.UpdatePegawai();
             this.addPegawai1 = new TugasAkhirTest.AddPegawai();
-            this.adminInfo1 = new TugasAkhirTest.AdminInfo();
             this.SuspendLayout();
             // 
             // infopegawaiadmin_btn
             // 
             this.infopegawaiadmin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.infopegawaiadmin_btn.Location = new System.Drawing.Point(34, 15);
+            this.infopegawaiadmin_btn.Location = new System.Drawing.Point(28, 14);
             this.infopegawaiadmin_btn.Name = "infopegawaiadmin_btn";
             this.infopegawaiadmin_btn.Size = new System.Drawing.Size(128, 30);
             this.infopegawaiadmin_btn.TabIndex = 0;
-            this.infopegawaiadmin_btn.Text = "Info Pegawai";
+            this.infopegawaiadmin_btn.Text = "Data Pegawai";
             this.infopegawaiadmin_btn.UseVisualStyleBackColor = true;
             this.infopegawaiadmin_btn.Click += new System.EventHandler(this.infopegawaiadmin_btn_Click);
             // 
             // addpegawaiadmin_btn
             // 
             this.addpegawaiadmin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addpegawaiadmin_btn.Location = new System.Drawing.Point(177, 15);
+            this.addpegawaiadmin_btn.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addpegawaiadmin_btn.Location = new System.Drawing.Point(178, 15);
             this.addpegawaiadmin_btn.Name = "addpegawaiadmin_btn";
-            this.addpegawaiadmin_btn.Size = new System.Drawing.Size(140, 30);
+            this.addpegawaiadmin_btn.Size = new System.Drawing.Size(155, 30);
             this.addpegawaiadmin_btn.TabIndex = 1;
-            this.addpegawaiadmin_btn.Text = "Add Pegawai";
+            this.addpegawaiadmin_btn.Text = "Tambah Pegawai";
             this.addpegawaiadmin_btn.UseVisualStyleBackColor = true;
             this.addpegawaiadmin_btn.Click += new System.EventHandler(this.addpegawaiadmin_btn_Click);
             // 
             // updatepegawaiadmin_btn
             // 
             this.updatepegawaiadmin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updatepegawaiadmin_btn.Location = new System.Drawing.Point(332, 15);
+            this.updatepegawaiadmin_btn.Location = new System.Drawing.Point(355, 15);
             this.updatepegawaiadmin_btn.Name = "updatepegawaiadmin_btn";
-            this.updatepegawaiadmin_btn.Size = new System.Drawing.Size(152, 30);
+            this.updatepegawaiadmin_btn.Size = new System.Drawing.Size(132, 30);
             this.updatepegawaiadmin_btn.TabIndex = 2;
-            this.updatepegawaiadmin_btn.Text = "Update Pegawai";
+            this.updatepegawaiadmin_btn.Text = "Ubah Pegawai";
             this.updatepegawaiadmin_btn.UseVisualStyleBackColor = true;
             this.updatepegawaiadmin_btn.Click += new System.EventHandler(this.updatepegawaiadmin_btn_Click);
             // 
             // cutiadmin_btn
             // 
             this.cutiadmin_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cutiadmin_btn.Location = new System.Drawing.Point(499, 15);
+            this.cutiadmin_btn.Location = new System.Drawing.Point(509, 15);
             this.cutiadmin_btn.Name = "cutiadmin_btn";
             this.cutiadmin_btn.Size = new System.Drawing.Size(75, 30);
             this.cutiadmin_btn.TabIndex = 3;
             this.cutiadmin_btn.Text = "Cuti";
             this.cutiadmin_btn.UseVisualStyleBackColor = true;
             this.cutiadmin_btn.Click += new System.EventHandler(this.cutiadmin_btn_Click);
+            // 
+            // adminInfo1
+            // 
+            this.adminInfo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.adminInfo1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adminInfo1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.adminInfo1.Location = new System.Drawing.Point(0, 85);
+            this.adminInfo1.Name = "adminInfo1";
+            this.adminInfo1.Size = new System.Drawing.Size(615, 380);
+            this.adminInfo1.TabIndex = 8;
             // 
             // adminCuti1
             // 
@@ -111,24 +122,14 @@
             this.addPegawai1.Size = new System.Drawing.Size(615, 380);
             this.addPegawai1.TabIndex = 5;
             // 
-            // adminInfo1
-            // 
-            this.adminInfo1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.adminInfo1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminInfo1.ForeColor = System.Drawing.SystemColors.Control;
-            this.adminInfo1.Location = new System.Drawing.Point(0, 85);
-            this.adminInfo1.Name = "adminInfo1";
-            this.adminInfo1.Size = new System.Drawing.Size(615, 380);
-            this.adminInfo1.TabIndex = 4;
-            // 
             // EmployeeMnAdmin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Controls.Add(this.adminInfo1);
             this.Controls.Add(this.adminCuti1);
             this.Controls.Add(this.updatePegawai1);
             this.Controls.Add(this.addPegawai1);
-            this.Controls.Add(this.adminInfo1);
             this.Controls.Add(this.cutiadmin_btn);
             this.Controls.Add(this.updatepegawaiadmin_btn);
             this.Controls.Add(this.addpegawaiadmin_btn);

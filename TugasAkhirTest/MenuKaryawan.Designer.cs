@@ -33,6 +33,7 @@
             this.exit_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.sidemenu = new System.Windows.Forms.Panel();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.sidepanel = new System.Windows.Forms.Panel();
             this.aboutkaryawan_btn = new System.Windows.Forms.Button();
             this.attendancekaryawan_btn = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.employeeMnKaryawan1 = new TugasAkhirTest.EmployeeMnKaryawan();
             this.about1 = new TugasAkhirTest.About();
             this.homeKaryawan1 = new TugasAkhirTest.HomeKaryawan();
-            this.logout_btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.sidemenu.SuspendLayout();
             this.SuspendLayout();
@@ -97,6 +97,22 @@
             this.sidemenu.Size = new System.Drawing.Size(185, 510);
             this.sidemenu.TabIndex = 2;
             // 
+            // logout_btn
+            // 
+            this.logout_btn.FlatAppearance.BorderSize = 0;
+            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logout_btn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_btn.Image = ((System.Drawing.Image)(resources.GetObject("logout_btn.Image")));
+            this.logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logout_btn.Location = new System.Drawing.Point(16, 475);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(75, 23);
+            this.logout_btn.TabIndex = 8;
+            this.logout_btn.Text = "Keluar";
+            this.logout_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.logout_btn.UseVisualStyleBackColor = true;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
+            // 
             // sidepanel
             // 
             this.sidepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(107)))), ((int)(((byte)(255)))));
@@ -116,7 +132,7 @@
             this.aboutkaryawan_btn.Name = "aboutkaryawan_btn";
             this.aboutkaryawan_btn.Size = new System.Drawing.Size(169, 37);
             this.aboutkaryawan_btn.TabIndex = 7;
-            this.aboutkaryawan_btn.Text = "          About";
+            this.aboutkaryawan_btn.Text = "          Tentang Kami";
             this.aboutkaryawan_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.aboutkaryawan_btn.UseVisualStyleBackColor = true;
             this.aboutkaryawan_btn.Click += new System.EventHandler(this.aboutkaryawan_btn_Click);
@@ -132,7 +148,7 @@
             this.attendancekaryawan_btn.Name = "attendancekaryawan_btn";
             this.attendancekaryawan_btn.Size = new System.Drawing.Size(169, 37);
             this.attendancekaryawan_btn.TabIndex = 6;
-            this.attendancekaryawan_btn.Text = "          Attendance";
+            this.attendancekaryawan_btn.Text = "          Kehadiran";
             this.attendancekaryawan_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.attendancekaryawan_btn.UseVisualStyleBackColor = true;
             this.attendancekaryawan_btn.Click += new System.EventHandler(this.attendancekaryawan_btn_Click);
@@ -148,7 +164,7 @@
             this.employeekaryawan_btn.Name = "employeekaryawan_btn";
             this.employeekaryawan_btn.Size = new System.Drawing.Size(169, 37);
             this.employeekaryawan_btn.TabIndex = 5;
-            this.employeekaryawan_btn.Text = "          Employee";
+            this.employeekaryawan_btn.Text = "          Pegawai";
             this.employeekaryawan_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.employeekaryawan_btn.UseVisualStyleBackColor = true;
             this.employeekaryawan_btn.Click += new System.EventHandler(this.employeekaryawan_btn_Click);
@@ -164,7 +180,7 @@
             this.homekaryawan_btn.Name = "homekaryawan_btn";
             this.homekaryawan_btn.Size = new System.Drawing.Size(169, 37);
             this.homekaryawan_btn.TabIndex = 4;
-            this.homekaryawan_btn.Text = "          Home";
+            this.homekaryawan_btn.Text = "          Beranda";
             this.homekaryawan_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.homekaryawan_btn.UseVisualStyleBackColor = true;
             this.homekaryawan_btn.Click += new System.EventHandler(this.homekaryawan_btn_Click);
@@ -209,22 +225,6 @@
             this.homeKaryawan1.Name = "homeKaryawan1";
             this.homeKaryawan1.Size = new System.Drawing.Size(615, 465);
             this.homeKaryawan1.TabIndex = 3;
-            // 
-            // logout_btn
-            // 
-            this.logout_btn.FlatAppearance.BorderSize = 0;
-            this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logout_btn.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout_btn.Image = ((System.Drawing.Image)(resources.GetObject("logout_btn.Image")));
-            this.logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logout_btn.Location = new System.Drawing.Point(16, 475);
-            this.logout_btn.Name = "logout_btn";
-            this.logout_btn.Size = new System.Drawing.Size(75, 23);
-            this.logout_btn.TabIndex = 8;
-            this.logout_btn.Text = "Logout";
-            this.logout_btn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.logout_btn.UseVisualStyleBackColor = true;
-            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // MenuKaryawan
             // 

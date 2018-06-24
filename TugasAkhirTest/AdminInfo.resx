@@ -121,7 +121,7 @@
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="delete_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAGYktHRAD/AP8A/6C9p5MAAAD2SURBVEhL7ZQ9CgIxEIW3U1hEwdpGXBArb2BhY7mdNxBvYGGl
@@ -129,6 +129,18 @@
         ZE6fyfUpNwhl8GbiIlu4UZcaMfBcumOOsC/TiB8EC9Mi0taSF+ZsXAot1cOw7fnREDiBa9iDA91z5Zl7
         3gcP4UNkDBd2a1aeCe/jEEMcUg/DtufPhvThFLZgR/dceeae92FDtOSFORv/bsje9khXS16Q4y+G7LRU
         D8Jz2yMPeG0gc2SmTzQDDfygd/hsIHMrbY2EkCRvxWFvcoB6Xq8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAGYktHRAD/AP8A/6C9p5MAAAF1SURBVEhL7ZUxSgNBFIbXmMSEYJMqB8gBvIFeIGJvJKkEbyBo
+        rYWgWFsYtbLwBDaCpYoWWtpoo0HQJvX4/btvQJOd3RQp94MPdt787NtNZmeigpninKvjBl7gI77iHZ5i
+        FxctqmwDW1iyUj6E+zhE8Y03eI23NhZfuIVzuK0CtOwWYQhV8CyOO/eEHfz3dIzncQ3vUVziTnI5XZPz
+        JOuOsGzlVJhXs32FQT+nyG5CoJfk3IGVgpBp4pLp31yEmzBZxXd8xoqVg5DRf5ZGbpN1XLZSJuTaqEbj
+        1i1SUGBoVYytEm/bIpmQW0GtzqqVJmFSm1safYsEIaPl/4JvurbyJEz+bXKC/mtuWiQImUMUXSulQ8A3
+        0Rcv9jBv7yrjscIwsHIYQr7JLl4ll/Gmt4oLFothXELtztqlhc6XzAeKIeSb6FzQ+bCJHyrACHWO6DzR
+        ufKD4hN7dot8COvp1KhhJdX8yajt/wF1MurtNFa9ZtGCWRBFv+YhP43uo5YTAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

@@ -147,11 +147,11 @@
             // 
             this.update_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.update_btn.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_btn.Location = new System.Drawing.Point(335, 343);
+            this.update_btn.Location = new System.Drawing.Point(364, 343);
             this.update_btn.Name = "update_btn";
             this.update_btn.Size = new System.Drawing.Size(75, 29);
             this.update_btn.TabIndex = 27;
-            this.update_btn.Text = "UPDATE";
+            this.update_btn.Text = "UBAH";
             this.update_btn.UseVisualStyleBackColor = true;
             this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
             // 

@@ -45,7 +45,7 @@
             this.employeeinfokaryawan_btn.Name = "employeeinfokaryawan_btn";
             this.employeeinfokaryawan_btn.Size = new System.Drawing.Size(153, 30);
             this.employeeinfokaryawan_btn.TabIndex = 0;
-            this.employeeinfokaryawan_btn.Text = "Employee Info";
+            this.employeeinfokaryawan_btn.Text = "Data Pegawai";
             this.employeeinfokaryawan_btn.UseVisualStyleBackColor = true;
             this.employeeinfokaryawan_btn.Click += new System.EventHandler(this.employeeinfokaryawan_btn_Click);
             // 
