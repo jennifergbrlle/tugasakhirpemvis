@@ -30,7 +30,6 @@ namespace TugasAkhirTest
             sidepanel.Top = homeadmin_btn.Top;
             homeAdmin1.BringToFront();
         }
-
         private void employeeadmin_btn_Click(object sender, EventArgs e)
         {
             sidepanel.Height = employeeadmin_btn.Height;

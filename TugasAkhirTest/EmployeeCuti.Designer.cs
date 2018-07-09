@@ -47,6 +47,8 @@
             this.ajukancuti_txt = new System.Windows.Forms.Button();
             this.batalcuti_txt = new System.Windows.Forms.Button();
             this.search_btn = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.sisacuti_txt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -131,6 +133,7 @@
             // 
             // namapegawaicuti_txt
             // 
+            this.namapegawaicuti_txt.Enabled = false;
             this.namapegawaicuti_txt.Location = new System.Drawing.Point(143, 133);
             this.namapegawaicuti_txt.Name = "namapegawaicuti_txt";
             this.namapegawaicuti_txt.Size = new System.Drawing.Size(157, 24);
@@ -138,6 +141,7 @@
             // 
             // divisicuti_txt
             // 
+            this.divisicuti_txt.Enabled = false;
             this.divisicuti_txt.Location = new System.Drawing.Point(143, 170);
             this.divisicuti_txt.Name = "divisicuti_txt";
             this.divisicuti_txt.Size = new System.Drawing.Size(157, 24);
@@ -145,6 +149,7 @@
             // 
             // jabatancuti_txt
             // 
+            this.jabatancuti_txt.Enabled = false;
             this.jabatancuti_txt.Location = new System.Drawing.Point(143, 207);
             this.jabatancuti_txt.Name = "jabatancuti_txt";
             this.jabatancuti_txt.Size = new System.Drawing.Size(157, 24);
@@ -167,6 +172,7 @@
             this.akhircuti_txt.Name = "akhircuti_txt";
             this.akhircuti_txt.Size = new System.Drawing.Size(157, 24);
             this.akhircuti_txt.TabIndex = 14;
+            this.akhircuti_txt.CloseUp += new System.EventHandler(this.akhircuti_txt_CloseUp);
             // 
             // keterangancuti_txt
             // 
@@ -211,10 +217,29 @@
             this.search_btn.UseVisualStyleBackColor = true;
             this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(23, 247);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 19);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Sisa Cuti";
+            // 
+            // sisacuti_txt
+            // 
+            this.sisacuti_txt.Enabled = false;
+            this.sisacuti_txt.Location = new System.Drawing.Point(143, 244);
+            this.sisacuti_txt.Name = "sisacuti_txt";
+            this.sisacuti_txt.Size = new System.Drawing.Size(157, 24);
+            this.sisacuti_txt.TabIndex = 20;
+            // 
             // EmployeeCuti
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Controls.Add(this.sisacuti_txt);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.search_btn);
             this.Controls.Add(this.batalcuti_txt);
             this.Controls.Add(this.ajukancuti_txt);
@@ -263,5 +288,7 @@
         private System.Windows.Forms.Button ajukancuti_txt;
         private System.Windows.Forms.Button batalcuti_txt;
         private System.Windows.Forms.Button search_btn;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox sisacuti_txt;
     }
 }

@@ -56,7 +56,7 @@ namespace TugasAkhirTest
             {
                 MySqlCommand cmd2 = new MySqlCommand();
                 cmd2.CommandType = CommandType.Text;
-                cmd2.CommandText = "select nip, namapegawai, namadiv, namajabat from employeeinfo where nip = '" + NIIPcuti_txt.Text + "'";
+                cmd2.CommandText = "select nip, namapegawai, namadiv, namajabat,jatahcuti from employeeinfo where nip = '" + NIIPcuti_txt.Text + "'";
                 cmd2.Connection = con;
                 MySqlDataReader dr = cmd2.ExecuteReader();
                 while (dr.Read())
@@ -65,6 +65,7 @@ namespace TugasAkhirTest
                     namapegawaicuti_txt.Text = dr["NamaPegawai"].ToString();
                     divisicuti_txt.Text = dr["NamaDiv"].ToString();
                     jabatancuti_txt.Text = dr["NamaJabat"].ToString();
+                    sisacuti_txt.Text = dr["JatahCuti"].ToString();
                 }
             }
             else
@@ -72,6 +73,38 @@ namespace TugasAkhirTest
                 MessageBox.Show("Data tidak ditemukan");
             }
 
+            con.Close();
+        }
+
+        private void akhircuti_txt_CloseUp(object sender, EventArgs e)
+        {
+            DateTime awalcuti = Convert.ToDateTime(mulaicuti_txt.Text);
+            DateTime akhircuti = Convert.ToDateTime(akhircuti_txt.Text);
+            con.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select jatahcuti from employeeinfo where nip = '" + NIIPcuti_txt.Text + "'";
+            cmd.Connection = con;
+            MySqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                int jatahcuti = Convert.ToInt32(dr["JatahCuti"]);
+                if (awalcuti < akhircuti)
+                {
+                    TimeSpan ts = akhircuti.Subtract(awalcuti);
+                    int jumlahcuti = ts.Days;
+                    if (jatahcuti < jumlahcuti)
+                    {
+                        MessageBox.Show("Jatah cuti tidak mencukupi");
+                        akhircuti_txt.Value = DateTime.Now;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Mulai cuti harus lebih kecil dari akhir cuti");
+                    akhircuti_txt.Value = DateTime.Now;
+                }
+            }
             con.Close();
         }
     }

@@ -20,6 +20,10 @@ namespace TugasAkhirTest
         {
             Application.Exit();
         }
+        public Login()
+        {
+            InitializeComponent();
+        }
 
         private void login_btn_Click(object sender, EventArgs e)
         {
@@ -28,11 +32,9 @@ namespace TugasAkhirTest
             cmd.CommandType = CommandType.Text;
             
             cmd.CommandText="select level,nip from user, pegawai where user.username like pegawai.nip and username='"+username_txt.Text+"' and password='"+password_txt.Text+"'";
-            //cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             da.Fill(dt);
-            //i = Convert.ToInt32(dt.Rows.Count.ToString());
             if (dt.Rows.Count == 1)
             {
                 this.Hide();

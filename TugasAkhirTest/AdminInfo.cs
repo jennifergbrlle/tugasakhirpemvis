@@ -18,13 +18,25 @@ namespace TugasAkhirTest
         {
             InitializeComponent();
             DisplayData();
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select count(*) as jumlah from pegawai where flag = 1";
+            cmd.Connection = con;
+            MySqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                label4.Text = dr["jumlah"].ToString();
+            }
+            con.Close();
+
         }
         private void DisplayData()
         {
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from employeeinfo";
+            cmd.CommandText = "select * from employeeinfo where flag = 1";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -64,15 +76,13 @@ namespace TugasAkhirTest
         {
             int id = dataGridView1.SelectedCells[0].RowIndex;
             int nip = Convert.ToInt32(dataGridView1.Rows[id].Cells[0].Value.ToString());
+            int test = dataGridView1.CurrentCell.RowIndex;
             con.Open();
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "delete from pegawai where nip = '" + nip + "'";
+            cmd.CommandText = "update pegawai set flag = 0 where nip = '" + nip + "'";
             cmd.ExecuteNonQuery();
-            MySqlCommand cmd2 = con.CreateCommand();
-            cmd2.CommandType = CommandType.Text;
-            cmd2.CommandText = "delete from user where username = '" + nip + "'";
-            cmd2.ExecuteNonQuery();
+            dataGridView1.Rows.RemoveAt(test);
             MessageBox.Show("Data berhasil dihapus");
             con.Close();
             DisplayData();
@@ -81,6 +91,11 @@ namespace TugasAkhirTest
         private void button1_Click_1(object sender, EventArgs e)
         {
             DisplayData();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
